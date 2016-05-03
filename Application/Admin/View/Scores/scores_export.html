@@ -1,0 +1,60 @@
+<include file="Public/header"/>
+<div style="padding-top: 50px;padding-left: 50px;padding-right: 50px">
+    <h2>
+        导出成绩
+        <a class="btn btn-info navbar-right" href="{:U('Admin/scores/index')}">
+            返回分数列表
+        </a>
+    </h2>
+    <hr>
+        <!-- 标题 end -->
+        <!-- 内容区块 start -->
+        <div class="row">
+            <form action="{:U("admin/scores/export")}" method="post" onsubmit="return check_form()">
+                <input name="exam_id" type="hidden" value="{$exam_id}"/>
+                <div class="input-group input-group-sm col-md-4 col-md-offset-4">
+                    <div class="input-group " id="id">
+                        <span class="input-group-addon" id="sizing-addon1">
+                            <span aria-hidden="true" >个数
+                            </span>
+                        </span>
+                        <input class="form-control" id="number" name="number" onkeydown="onlyNum()" 
+                         placeholder="导出前多少名,默认导出全部" type="text"/>
+                    </div>
+                </div>
+                <div class="input-group input-group-sm col-md-4 col-md-offset-4">
+                    <input class="btn btn-primary Sub" type="submit" value="导出"/>
+                </div>
+                <br/>
+            </form>
+        </div>
+    </hr>
+</div>
+<!-- 主内容 end -->
+<script type="text/javascript">
+    /*只能输入数字*/
+    function onlyNum() {
+        if(!(event.keyCode==46)&&!(event.keyCode==8)&&!(event.keyCode==37)&&!(event.keyCode==39))
+        if(!((event.keyCode>=48&&event.keyCode<=57)||(event.keyCode>=96&&event.keyCode<=105)))
+        event.returnValue=false;
+    }
+    function check_form(){
+        if($("#number").value==""){
+            if(confirm("将导出所有的考试成绩")){
+                return true;
+            } else{
+                return false;
+            }
+        } else {
+            var number = $("#number").value;
+            if(confirm("将导出前"+number+"的考试成绩！")){
+                return true;
+            } else{
+                return false;
+            }
+        }
+        return false;
+    }
+</script>
+<include file="Public/footer">
+</include>

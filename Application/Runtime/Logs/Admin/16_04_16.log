@@ -1,0 +1,160 @@
+[ 2016-04-16T13:39:50+08:00 ] ::1 /hstces/Admin/Login/index.html
+ERR: 模板不存在:./Application/Admin/View/Login/login.html
+
+[ 2016-04-16T13:40:20+08:00 ] ::1 /hstces/Admin/Login/index.html
+ERR: 模板不存在:./Application/Admin/View/Login/login.html
+
+[ 2016-04-16T15:35:09+08:00 ] ::1 /hstces/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0389s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `admin` SET `last_login_ip`='0.0.0.0' WHERE `id` = 1 [ RunTime:0.0452s ]
+
+[ 2016-04-16T16:31:10+08:00 ] ::1 /hstces/Admin/Config/base.html
+ERR: 无法加载控制器:Config
+
+[ 2016-04-16T17:13:43+08:00 ] ::1 /hstces/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001316s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `admin` SET `last_login_ip`='0.0.0.0' WHERE `id` = 1 [ RunTime:0.0451s ]
+
+[ 2016-04-16T18:52:40+08:00 ] ::1 /hstces/Admin/admin.css
+ERR: 无法加载控制器:Admin.css
+
+[ 2016-04-16T18:52:40+08:00 ] ::1 /hstces/Admin/jquery-ui.min.js
+ERR: 无法加载控制器:Jquery-ui.min.js
+
+[ 2016-04-16T18:52:40+08:00 ] ::1 /hstces/Admin/bootstrap.css
+ERR: 无法加载控制器:Bootstrap.css
+
+[ 2016-04-16T18:52:40+08:00 ] ::1 /hstces/Admin/jquery-ui.min.css
+ERR: 无法加载控制器:Jquery-ui.min.css
+
+[ 2016-04-16T18:52:40+08:00 ] ::1 /hstces/Admin/jquery-1.8.3.min.js
+ERR: 无法加载控制器:Jquery-1.8.3.min.js
+
+[ 2016-04-16T18:52:40+08:00 ] ::1 /hstces/Admin/bootstrap_fix.css
+ERR: 无法加载控制器:Bootstrap_fix.css
+
+[ 2016-04-16T18:52:40+08:00 ] ::1 /hstces/Admin/Validform_v5.3.2_min.js
+ERR: 无法加载控制器:Validform_v5.3.2_min.js
+
+[ 2016-04-16T18:52:40+08:00 ] ::1 /hstces/Admin/jquery.cookie.js
+ERR: 无法加载控制器:Jquery.cookie.js
+
+[ 2016-04-16T18:52:40+08:00 ] ::1 /hstces/Admin/Jquery.ui.datepicker-zh-CN.js
+ERR: 无法加载控制器:Jquery.ui.datepicker-zh-CN.js
+
+[ 2016-04-16T18:53:39+08:00 ] ::1 /hstces/Admin/Goods/index.html
+ERR: 无法加载控制器:Goods
+
+[ 2016-04-16T19:15:39+08:00 ] ::1 /hstces/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000997s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.3661s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `admin` SET `last_login_ip`='0.0.0.0' WHERE `id` = 1 [ RunTime:0.0558s ]
+
+[ 2016-04-16T19:15:44+08:00 ] ::1 /hstces/Admin/Goods/index.html
+ERR: 无法加载控制器:Goods
+
+[ 2016-04-16T19:20:08+08:00 ] ::1 /hstces/Admin/Goods/index.html
+ERR: 无法加载控制器:Goods
+
+[ 2016-04-16T19:20:15+08:00 ] ::1 /hstces/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `admin` SET `last_login_ip`='0.0.0.0' WHERE `id` = 1 [ RunTime:0.0402s ]
+
+[ 2016-04-16T19:20:23+08:00 ] ::1 /hstces/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001507s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `admin` SET `last_login_ip`='0.0.0.0' WHERE `id` = 1 [ RunTime:0.0444s ]
+
+[ 2016-04-16T19:38:27+08:00 ] ::1 /hstces/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `admin` SET `last_login_ip`='0.0.0.0' WHERE `id` = 1 [ RunTime:0.0637s ]
+
+[ 2016-04-16T19:41:51+08:00 ] ::1 /hstces/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001323s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `admin` SET `last_login_ip`='0.0.0.0' WHERE `id` = 1 [ RunTime:0.0713s ]
+
+[ 2016-04-16T19:57:23+08:00 ] ::1 /hstces/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001828s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `admin` SET `last_login_ip`='0.0.0.0' WHERE `id` = 1 [ RunTime:0.0554s ]
+
+[ 2016-04-16T20:17:54+08:00 ] ::1 /hstcesys/Admin/index/admin_files/jquery.min.js
+ERR: 非法操作:admin_files
+
+[ 2016-04-16T20:17:55+08:00 ] ::1 /hstcesys/Admin/index/admin_files/amazeui.min.js
+ERR: 非法操作:admin_files
+
+[ 2016-04-16T20:17:55+08:00 ] ::1 /hstcesys/Admin/index/admin_files/app.js
+ERR: 非法操作:admin_files
+
+[ 2016-04-16T20:36:24+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002180s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `admin` SET `last_login_ip`='0.0.0.0' WHERE `id` = 1 [ RunTime:0.0570s ]
+
+[ 2016-04-16T21:29:28+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001342s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `admin` SET `last_login_ip`='0.0.0.0' WHERE `id` = 1 [ RunTime:0.0692s ]
+
+[ 2016-04-16T22:08:36+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001348s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `admin` SET `last_login_ip`='0.0.0.0' WHERE `id` = 1 [ RunTime:0.0653s ]
+
+[ 2016-04-16T22:30:09+08:00 ] ::1 /hstcesys/Admin/questions/index.html
+ERR: 模板不存在:./Application/Admin/View/Questions/questions_list.html
+
+[ 2016-04-16T23:56:53+08:00 ] ::1 /hstcesys/Admin/Questions/index/p/1.html
+ERR: XML标签语法错误
+
+[ 2016-04-16T23:57:39+08:00 ] ::1 /hstcesys/Admin/Questions/index/p/1.html
+ERR: XML标签语法错误
+
+[ 2016-04-16T23:57:40+08:00 ] ::1 /hstcesys/Admin/Questions/index/p/1.html
+ERR: XML标签语法错误
+
+[ 2016-04-16T23:57:41+08:00 ] ::1 /hstcesys/Admin/Questions/index/p/1.html
+ERR: XML标签语法错误
+
+[ 2016-04-16T23:57:41+08:00 ] ::1 /hstcesys/Admin/Questions/index/p/1.html
+ERR: XML标签语法错误
+

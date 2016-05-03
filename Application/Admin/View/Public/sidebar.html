@@ -1,0 +1,48 @@
+<!-- 侧边导航栏 -->
+<div id="sideBar" class="span2">
+	<ul class="nav nav-tabs nav-stacked" id="admin-menu-bar">
+
+		<li class="active main-menu"><a href="javascript:void(0);"
+			class="main-menu-tit"><i class="icon-random"></i> 题目管理</a>
+			<ul class="nav nav-list sub-menu">
+				<li class=""><a href="{:U('questions/index')}" class="noborder">题目列表</a>
+					<a href="{:U('questions/export')}" class="noborder">导出题目</a> <a
+					href="{:U('questions/import')}" class="noborder">导入题目</a></li>
+			</ul></li>
+
+		<li class="active main-menu"><a href="javascript:void(0);"
+			class="main-menu-tit"><i class="icon-random"></i> 考试管理</a>
+			<ul class="nav nav-list sub-menu">
+				<li class="">
+					<a href="{:U('exam/index')}" class="noborder">考试列表</a>
+					<a href="{:U('exam/index')}" class="noborder">添加考试</a>
+					<a href="{:U('exam/index')}" class="noborder">成绩查看</a>
+					<a href="{:U('exam/index')}" class="noborder">导出成绩</a>
+				</li>
+			</ul>
+		</li>
+
+		<li class="active main-menu"><a href="javascript:void(0);"
+			class="main-menu-tit"><i class="icon-random"></i> 用户管理</a>
+			<ul class="nav nav-list sub-menu">
+				<li class=""><a href="{:U('Category/index')}" class="noborder">所有用户</a>
+				</li>
+			</ul></li>
+			
+		<li class="active main-menu"><a href="javascript:void(0);"
+			class="main-menu-tit"><i class="icon-random"></i> 安全管理</a>
+			<ul class="nav nav-list sub-menu">
+				<li class=""><a href="{:U('Password/edit')}" class="noborder">修改用户名/密码</a>
+				</li>
+			</ul></li>
+			
+		<li class="active main-menu">
+			<a href="javascript:void(0);" class="main-menu-tit">
+			<i class="icon-random"></i> 系统设置</a>
+			<ul class="nav nav-list sub-menu">
+				<li class=""><a href="{:U('Config/base')}" class="noborder">基本设置</a>
+				</li>
+			</ul></li>
+
+	</ul>
+</div>

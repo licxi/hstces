@@ -1,0 +1,566 @@
+[ 2016-04-16T14:00:33+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001211s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0615s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-04-16T14:00:33+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001302s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '20' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:00:34+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:00:34+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:00:34+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '20131' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:00:34+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '201311' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:00:34+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013118' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:00:34+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001009s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '20131181' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:00:35+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '201311812' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:00:35+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013118120' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:06:35+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001199s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:06:35+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '20' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:06:36+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:06:36+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:06:37+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:06:37+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013118120' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:15:30+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001199s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:15:30+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '20' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-04-16T14:15:30+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:15:31+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001999s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:15:31+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001312s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '20131' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:15:32+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '201311' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-04-16T14:15:32+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013118' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:15:33+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '20131181' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:15:33+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '201311812' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:15:33+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013118120' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:18:02+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001189s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '1' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:18:02+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001015s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '18' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:18:02+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001309s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '180' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-04-16T14:18:02+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '1809' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:18:02+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '18098' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:18:03+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '180981' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:18:03+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '1809810' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:18:03+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '18098108' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:18:04+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000910s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '180981085' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:18:04+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '1809810858' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-04-16T14:18:04+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '18098108580' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:20:21+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001453s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-04-16T14:20:22+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '20' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:20:22+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '201' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-04-16T14:20:22+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001005s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-04-16T14:20:23+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:20:23+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013118120' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:28:11+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002153s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '201311812' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:28:11+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013118120' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:29:21+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:29:21+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '20' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:29:21+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '201' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:29:22+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001223s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:29:22+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '20131' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:29:22+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001213s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '201311' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:29:22+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013118' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:29:22+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '20131181' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:29:23+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '201311812' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:29:23+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000910s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013118120' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:32:59+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001688s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:33:00+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '20' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:33:00+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001392s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:33:00+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:33:00+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '20131' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:33:00+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '201311' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-04-16T14:33:00+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013118' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-04-16T14:33:01+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '20131181' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-04-16T14:33:01+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '201311812' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:54:04+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001660s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:54:04+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '20' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:54:05+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:54:05+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:54:05+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '20131' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:54:05+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001318s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '201311' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:54:05+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013118' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:54:05+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '20131181' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:54:06+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001203s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '201311812' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:54:06+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013118120' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:55:57+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:55:57+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001345s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '20' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:55:58+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001296s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '20' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T14:55:59+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013118120' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T15:29:01+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '201311812' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T15:29:01+08:00 ] ::1 /hstces/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001993s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013118120' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-16T15:30:27+08:00 ] ::1 /hstces/Home/Admin/questions.html
+ERR: 无法加载控制器:Admin
+
+[ 2016-04-16T15:33:53+08:00 ] ::1 /hstces/Home/Admin/questions.html
+ERR: 无法加载控制器:Admin
+

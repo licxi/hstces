@@ -1,0 +1,122 @@
+<include file="public/header"/>
+
+<div class="modal fade" id="scores_export" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">设置导出个数</h4>
+      </div>
+      <div class="modal-body">
+        <form action="{:U("admin/scores/export")}" method="post" id="m_form">
+          <div class="input-group " id="id">
+          <input name="exam_id" type="hidden" value="{$exam_id}"/>
+            <span class="input-group-addon" id="sizing-addon1">
+              <span >个数
+              </span>
+            </span>
+            <input id ="number" name="number" onkeydown="onlyNum();"  class="form-control" placeholder="只能输入数字,不填代表导出全部" type="text"/>
+            </div>
+            <br/>          
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" id="btn_scores_export" class="btn btn-primary" data-dismiss="modal">导出</button>
+
+        </form>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="my_table">
+
+      <h2 style="text-align: center;">
+        <span class="navbar-left">成绩管理</span><span>{$title}</span><a class="btn btn-info navbar-right" data-toggle="modal" 
+        data-target="#scores_export">导出成绩</a><hr>
+        <!-- 标题 end -->
+        
+      </h2><hr>
+      <if condition="$scores_list">
+      <div class="dataBox">
+      <div class="table-responsive">
+        <table class="table table-hover table-bordered table-striped center">
+          <thead>
+            <tr>
+              <th style="width: 10%">编号</th>
+              <th style="width: 10%">学号</th>
+              <th style="width: 15%">姓名</th>
+              <th style="width: 15%">得分</th>
+              <th style="width: 10%">用时</th>
+              <th style="width: 30%">院系</th>
+              <th style="width: 9%">操作</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <foreach name="scores_list" item="vo">
+            <tr id="tr{$vo.id}">
+              <td >{$vo.id}</td>
+              <td >{$vo.student_id}</td>
+              <td >{$vo.user_name}</td>
+              <td >{$vo.score}</td>
+              <td >{$vo.use_time}</td>
+              <td >{$vo.college_name}</td>
+              <td >
+
+                <div class="dropdown">
+                  <button type="button" class="btn dropdown-toggle"
+                    id="dropdownMenu1" data-toggle="dropdown">
+                    操作 <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu"
+                    aria-labelledby="dropdownMenu1" style="min-width: 80px;">
+                    <li role="presentation"><a class="btn" role="menuitem" tabindex="-1" 
+                      href="{:U("admin/exams/pause?exam_id=$vo[id]")}">操作</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"
+                      href="{:U("admin/exams/edit?exam_id=$vo[id]")}">编辑</a></li>
+                      <li><a class="btn" data-toggle="modal" data-target="#del_exam" onclick="del({$vo.id})">删除</a></li>
+                  </ul>
+                </div></td>
+            </tr>
+            </foreach>
+
+          </tbody>
+        </table>
+        </div>
+      </div>
+      <else />
+      <tr>
+        <td colspan="13">暂无相关信息</td>
+      </tr>
+      </if>
+      <include file="Public/page" />
+</div>
+<script>
+  //设置为只能输入数据，防止输入非法字符
+	function onlyNum() {
+        if(!(event.keyCode==46)&&!(event.keyCode==8)&&!(event.keyCode==37)&&!(event.keyCode==39))
+        if(!((event.keyCode>=48&&event.keyCode<=57)||(event.keyCode>=96&&event.keyCode<=105)))
+        event.returnValue=false;
+  }
+    //提示导出的个数
+      $("#btn_scores_export").click(function(){
+         if($("#number").val()==""){
+            if(confirm("将导出所有的考试成绩")){
+                $("#m_form").submit();
+                $("#scores_export").modal("hide");
+            } else{
+                return false;
+            }
+        } else {
+            var number = $("#number").val();
+            if(confirm("将导出前"+number+"的考试成绩！")){
+                $("#m_form").submit();
+            } else{
+                return false;
+            }
+        }
+        return false;
+      });
+</script>
+<include file="public/footer"/>

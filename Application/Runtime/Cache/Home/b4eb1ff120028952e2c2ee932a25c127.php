@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?><script tyep="text/javascript">alert("注册成功！请登录");window.location.href="<?php echo U("Admin/questions/");?>";</script>

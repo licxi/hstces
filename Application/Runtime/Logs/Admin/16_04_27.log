@@ -1,0 +1,17 @@
+[ 2016-04-27T23:39:20+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001233s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0263s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = '30c8586794579fc0ea93c5b8561460b2' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-04-27T23:40:04+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002598s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+SQL: SHOW COLUMNS FROM `files` [ RunTime:0.0818s ]
+SQL: INSERT INTO `files` (`file_name`,`file_hash`,`file_save_name`) VALUES ('养生.zip','26d2c2d0fe01f2bd03c17b4469d97c56c7567206','5720dd5417285.zip') [ RunTime:0.0476s ]
+NOTIC: [2] Illegal string offset 'file_id' F:\PHP\Workspace\hstcesys\Application\Admin\Controller\FileController.class.php 第 39 行.
+NOTIC: [2] Illegal string offset 'file_id' F:\PHP\Workspace\hstcesys\Application\Admin\Controller\FileController.class.php 第 41 行.
+

@@ -1,0 +1,98 @@
+<include file="Public/header" />
+<div style="padding-top: 50px;padding-left: 50px;padding-right: 50px">
+  <h2><if condition="$questions_info">编辑<else/>添加</if>题目</h2><hr>
+  <div align="center">
+  	 <div class="input-group">
+				<form id="addform" action="{:U('Admin/questions/save')}"
+					method="post" enctype="multipart/form-data">
+					<input name="exam_id" type="hidden" value="{$exam_id}" />
+					<input name="id" type="hidden" value="{$questions_info.id}" />
+					<div class="control-group">
+						<label>题目：(<font color="red">必填，至少4个最多100个汉字</font>)
+						</label>
+						<textarea class="form-control" name="question" {empty name="questions_info"
+							}ajaxurl="{:U("admin/goods/check_question")}"{/empty} datatype="*4-50"
+							nullmsg="请填写产品！" errormsg="不能少于4个字符大于50个汉字">{$questions_info.question} </textarea>
+						<span class="Validform_checktip"></span>
+					</div>
+
+					<div class="control-group">
+						<label>选项一：(<font color="red">必填</font>)
+						</label> <input type="text" name="answer1" class="form-control"
+							value="{$questions_info.answer1}" datatype="*1-50"
+							nullmsg="请填写内容！" errormsg="不能少于1个字符大于250个字符" /> <span
+							class="Validform_checktip"></span>
+					</div>
+
+					<div class="control-group">
+						<label>选项二：(<font color="red">必填</font>)
+						</label> <input type="text" name="answer2" class="form-control"
+							value="{$questions_info.answer2}" datatype="*1-50" 
+							nullmsg="请填写内容！" errormsg="不能少于1个字符大于250个字符" /> <span
+							class="Validform_checktip"></span>
+					</div>
+
+					<div class="control-group">
+						<label>选项三：(<font color="red">必填</font>)
+						</label> <input type="text" name="answer3" class="form-control"
+							value="{$questions_info.answer3}" datatype="*1-50"
+							nullmsg="请填写内容！" errormsg="不能少于1个字符大于250个字符" /> <span
+							class="Validform_checktip"></span>
+					</div>
+
+					<div class="control-group">
+						<label>选项四：(<font color="red">必填</font>)
+						</label> <input type="text" name="answer4" class="form-control"
+							value="{$questions_info.answer4}" datatype="*1-50"
+							nullmsg="请填写内容！" errormsg="不能少于1个字符大于250个字符" /> <span
+							class="Validform_checktip"></span>
+					</div>
+
+					<div class="control-group">
+						<label>正确答案：</label> <select name="rightAnswer" class="form-control">
+							<switch name="questions_info.rightanswer"> <case
+								value="A">
+							<option value="A" selected="selected">A</option>
+							<option value="B">B</option>
+							<option value="C">C</option>
+							<option value="D">D</option>
+							</case> <case value="B">
+							<option value="A">A</option>
+							<option value="B" selected="selected">B</option>
+							<option value="C">C</option>
+							<option value="D">D</option>
+							</case> <case value="C">
+							<option value="A">A</option>
+							<option value="B">B</option>
+							<option value="C" selected="selected">C</option>
+							<option value="D">D</option>
+							</case> <case value="D">
+							<option value="A">A</option>
+							<option value="B">B</option>
+							<option value="C">C</option>
+							<option value="D" selected="selected">D</option>
+							</case> <default />
+							<option value="A">A</option>
+							<option value="B">B</option>
+							<option value="C">C</option>
+							<option value="D">D</option>
+							</switch>
+
+						</select>
+					</div>
+					<div class="control-group" style="padding-top: 5PX;text-align: center;">
+						<img style="display: none;" src="images/loading.gif" />
+						<input type="button" class="btn btn-primary Sub" onclick="back()" value="取消" />
+						<input type="submit" class="btn btn-primary Sub" value="保存" />
+							
+					</div>
+				</form>
+			</div>
+  </div>
+</div>
+<script type="text/javascript">
+	function back() {
+		window.location.href = "{:U('admin/questions/index')}";
+	}
+</script>
+<include file="Public/footer" />

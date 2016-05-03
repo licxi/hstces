@@ -1,0 +1,536 @@
+[ 2016-04-20T19:14:11+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0177s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-04-20T19:22:07+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001113s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2016-04-20T19:32:29+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002540s ]
+NOTIC: [8] Undefined index: excelData F:\PHP\Workspace\hstcesys\Application\Admin\Controller\QuestionsController.class.php 第 152 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] finfo_file(): Empty filename or path F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: error F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 320 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 331 行.
+
+[ 2016-04-20T19:43:11+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002905s ]
+NOTIC: [8] Undefined index: excelData F:\PHP\Workspace\hstcesys\Application\Admin\Controller\QuestionsController.class.php 第 152 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] finfo_file(): Empty filename or path F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: error F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 320 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 331 行.
+
+[ 2016-04-20T19:45:21+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002436s ]
+NOTIC: [8] Undefined index: excelData F:\PHP\Workspace\hstcesys\Application\Admin\Controller\QuestionsController.class.php 第 156 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] finfo_file(): Empty filename or path F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: error F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 320 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 331 行.
+
+[ 2016-04-20T19:48:11+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004283s ]
+NOTIC: [8] Undefined index: excelData F:\PHP\Workspace\hstcesys\Application\Admin\Controller\QuestionsController.class.php 第 156 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] finfo_file(): Empty filename or path F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: error F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 320 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 331 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001459s ]
+
+[ 2016-04-20T19:48:41+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003165s ]
+NOTIC: [8] Undefined index: excelData F:\PHP\Workspace\hstcesys\Application\Admin\Controller\QuestionsController.class.php 第 156 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] finfo_file(): Empty filename or path F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: error F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 320 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 331 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002498s ]
+
+[ 2016-04-20T19:49:15+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002942s ]
+NOTIC: [8] Undefined index: excelData F:\PHP\Workspace\hstcesys\Application\Admin\Controller\QuestionsController.class.php 第 156 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] finfo_file(): Empty filename or path F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: error F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 320 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 331 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001983s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002231s ]
+
+[ 2016-04-20T19:51:27+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003009s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0062s ]
+SQL: INSERT INTO `questions` (`question`,`answer1`,`answer2`,`answer3`,`answer4`,`rightAnswer`) VALUES ('上传测试','上传','3','4','5','d') [ RunTime:0.0581s ]
+
+[ 2016-04-20T19:57:54+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002113s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0056s ]
+SQL: INSERT INTO `questions` (`question`,`answer1`,`answer2`,`answer3`,`answer4`,`rightAnswer`) VALUES ('上传测试','上传','3','4','5','d') [ RunTime:0.0837s ]
+
+[ 2016-04-20T19:58:57+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002250s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0052s ]
+SQL: INSERT INTO `questions` (`question`,`answer1`,`answer2`,`answer3`,`answer4`,`rightAnswer`) VALUES ('上传测试','上传','3','4','5','d') [ RunTime:0.0392s ]
+
+[ 2016-04-20T19:59:29+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003292s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0050s ]
+SQL: INSERT INTO `questions` (`question`,`answer1`,`answer2`,`answer3`,`answer4`,`rightAnswer`) VALUES ('上传测试','上传','3','4','5','d') [ RunTime:0.0567s ]
+
+[ 2016-04-20T19:59:58+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001939s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0053s ]
+SQL: INSERT INTO `questions` (`question`,`answer1`,`answer2`,`answer3`,`answer4`,`rightAnswer`) VALUES ('上传测试','上传','3','4','5','d') [ RunTime:0.0595s ]
+
+[ 2016-04-20T20:00:35+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001803s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0052s ]
+SQL: INSERT INTO `questions` (`question`,`answer1`,`answer2`,`answer3`,`answer4`,`rightAnswer`) VALUES ('上传测试','上传','3','4','5','d') [ RunTime:0.0444s ]
+
+[ 2016-04-20T20:04:08+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001636s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0191s ]
+SQL: INSERT INTO `questions` (`question`,`answer1`,`answer2`,`answer3`,`answer4`,`rightAnswer`) VALUES ('上传测试','上传','3','4','5','d') [ RunTime:0.0345s ]
+
+[ 2016-04-20T20:08:58+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002963s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0055s ]
+SQL: INSERT INTO `questions` (`question`,`answer1`,`answer2`,`answer3`,`answer4`,`rightAnswer`) VALUES ('上传测试','上传','3','4','5','d') [ RunTime:0.0604s ]
+
+[ 2016-04-20T20:17:53+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001903s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2016-04-20T20:18:09+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002381s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0115s ]
+SQL: INSERT INTO `questions` (`question`,`answer1`,`answer2`,`answer3`,`answer4`,`rightAnswer`) VALUES ('上传测试','上传','3','4','5','d') [ RunTime:0.0608s ]
+
+[ 2016-04-20T20:21:31+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002712s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0108s ]
+SQL: INSERT INTO `questions` (`question`,`answer1`,`answer2`,`answer3`,`answer4`,`rightAnswer`) VALUES ('多文件上传','上传','3','4','5','d') [ RunTime:0.0984s ]
+
+[ 2016-04-20T20:21:32+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004519s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0068s ]
+SQL: INSERT INTO `questions` (`question`,`answer1`,`answer2`,`answer3`,`answer4`,`rightAnswer`) VALUES ('上传测试','上传','3','4','5','d') [ RunTime:0.0420s ]
+
+[ 2016-04-20T20:25:27+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004650s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0056s ]
+SQL: INSERT INTO `questions` (`question`,`answer1`,`answer2`,`answer3`,`answer4`,`rightAnswer`) VALUES ('多文件上传','上传','3','4','5','d') [ RunTime:0.0555s ]
+
+[ 2016-04-20T20:25:27+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002988s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0072s ]
+SQL: INSERT INTO `questions` (`question`,`answer1`,`answer2`,`answer3`,`answer4`,`rightAnswer`) VALUES ('上传测试','上传','3','4','5','d') [ RunTime:0.0305s ]
+
+[ 2016-04-20T20:26:19+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003060s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0111s ]
+SQL: INSERT INTO `questions` (`question`,`answer1`,`answer2`,`answer3`,`answer4`,`rightAnswer`) VALUES ('上传测试','上传','3','4','5','d') [ RunTime:0.3619s ]
+
+[ 2016-04-20T20:26:36+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002317s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0052s ]
+SQL: INSERT INTO `questions` (`question`,`answer1`,`answer2`,`answer3`,`answer4`,`rightAnswer`) VALUES ('多文件上传','上传','3','4','5','d') [ RunTime:0.0360s ]
+
+[ 2016-04-20T20:26:36+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002295s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0077s ]
+SQL: INSERT INTO `questions` (`question`,`answer1`,`answer2`,`answer3`,`answer4`,`rightAnswer`) VALUES ('上传测试','上传','3','4','5','d') [ RunTime:0.0346s ]
+
+[ 2016-04-20T20:27:02+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005648s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0054s ]
+SQL: INSERT INTO `questions` (`question`,`answer1`,`answer2`,`answer3`,`answer4`,`rightAnswer`) VALUES ('上传测试','上传','3','4','5','d') [ RunTime:0.0705s ]
+
+[ 2016-04-20T20:27:35+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003057s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0053s ]
+SQL: INSERT INTO `questions` (`question`,`answer1`,`answer2`,`answer3`,`answer4`,`rightAnswer`) VALUES ('多文件上传','上传','3','4','5','d') [ RunTime:0.0265s ]
+
+[ 2016-04-20T20:27:35+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003663s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0075s ]
+SQL: INSERT INTO `questions` (`question`,`answer1`,`answer2`,`answer3`,`answer4`,`rightAnswer`) VALUES ('上传测试','上传','3','4','5','d') [ RunTime:0.0216s ]
+
+[ 2016-04-20T20:43:44+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002750s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0057s ]
+SQL: DELETE FROM `questions` WHERE `id` = 39 [ RunTime:0.0658s ]
+
+[ 2016-04-20T20:43:51+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002582s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0147s ]
+SQL: DELETE FROM `questions` WHERE `id` = 36 [ RunTime:0.0560s ]
+
+[ 2016-04-20T20:44:00+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002670s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0068s ]
+SQL: DELETE FROM `questions` WHERE `id` = 36 [ RunTime:0.0003s ]
+
+[ 2016-04-20T20:44:00+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002850s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0083s ]
+SQL: DELETE FROM `questions` WHERE `id` = 29 [ RunTime:0.0573s ]
+
+[ 2016-04-20T20:44:12+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002684s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0135s ]
+SQL: DELETE FROM `questions` WHERE `id` = 36 [ RunTime:0.0004s ]
+
+[ 2016-04-20T20:44:12+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003654s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0087s ]
+SQL: DELETE FROM `questions` WHERE `id` = 29 [ RunTime:0.0003s ]
+
+[ 2016-04-20T20:44:13+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002962s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0075s ]
+SQL: DELETE FROM `questions` WHERE `id` = 30 [ RunTime:0.0615s ]
+
+[ 2016-04-20T20:44:54+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002595s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0084s ]
+SQL: DELETE FROM `questions` WHERE `id` = 30 [ RunTime:0.0004s ]
+
+[ 2016-04-20T20:44:54+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002677s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0092s ]
+SQL: DELETE FROM `questions` WHERE `id` = 37 [ RunTime:0.0605s ]
+
+[ 2016-04-20T20:44:54+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003069s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0051s ]
+SQL: DELETE FROM `questions` WHERE `id` = 36 [ RunTime:0.0003s ]
+
+[ 2016-04-20T20:44:54+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003925s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0076s ]
+SQL: DELETE FROM `questions` WHERE `id` = 29 [ RunTime:0.0004s ]
+
+[ 2016-04-20T20:45:30+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005767s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0084s ]
+SQL: DELETE FROM `questions` WHERE `id` = 31 [ RunTime:0.0618s ]
+
+[ 2016-04-20T20:45:41+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002325s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0130s ]
+SQL: DELETE FROM `questions` WHERE `id` = 31 [ RunTime:0.0002s ]
+
+[ 2016-04-20T20:45:42+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003936s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0084s ]
+SQL: DELETE FROM `questions` WHERE `id` = 38 [ RunTime:0.0556s ]
+
+[ 2016-04-20T20:48:27+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002661s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0094s ]
+SQL: DELETE FROM `questions` WHERE `id` = 35 [ RunTime:0.0587s ]
+
+[ 2016-04-20T20:48:47+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003271s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0134s ]
+SQL: DELETE FROM `questions` WHERE `id` = 35 [ RunTime:0.0006s ]
+
+[ 2016-04-20T20:48:47+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002310s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0082s ]
+SQL: DELETE FROM `questions` WHERE `id` = 34 [ RunTime:0.3605s ]
+
+[ 2016-04-20T20:50:12+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002585s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0071s ]
+SQL: DELETE FROM `questions` WHERE `id` = 33 [ RunTime:0.0560s ]
+
+[ 2016-04-20T20:50:17+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003181s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0082s ]
+SQL: DELETE FROM `questions` WHERE `id` = 33 [ RunTime:0.0004s ]
+
+[ 2016-04-20T20:50:18+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004510s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0076s ]
+SQL: DELETE FROM `questions` WHERE `id` = 32 [ RunTime:0.0623s ]
+
+[ 2016-04-20T20:53:45+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001845s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0052s ]
+SQL: DELETE FROM `questions` WHERE `id` = 28 [ RunTime:0.0611s ]
+
+[ 2016-04-20T20:53:46+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002324s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0051s ]
+SQL: DELETE FROM `questions` WHERE `id` = 28 [ RunTime:0.0002s ]
+
+[ 2016-04-20T20:54:00+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001683s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0046s ]
+SQL: DELETE FROM `questions` WHERE `id` = 27 [ RunTime:0.0617s ]
+
+[ 2016-04-20T20:54:04+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001939s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0057s ]
+SQL: DELETE FROM `questions` WHERE `id` = 27 [ RunTime:0.0002s ]
+
+[ 2016-04-20T20:54:13+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002181s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0053s ]
+SQL: DELETE FROM `questions` WHERE `id` = 27 [ RunTime:0.0002s ]
+
+[ 2016-04-20T20:54:13+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001620s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0059s ]
+SQL: DELETE FROM `questions` WHERE `id` = 27 [ RunTime:0.0002s ]
+
+[ 2016-04-20T20:54:44+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003503s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0051s ]
+SQL: DELETE FROM `questions` WHERE `id` = 26 [ RunTime:0.0582s ]
+
+[ 2016-04-20T21:04:08+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002377s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0110s ]
+SQL: DELETE FROM `questions` WHERE `id` = 20 [ RunTime:0.0544s ]
+
+[ 2016-04-20T21:04:12+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001756s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0051s ]
+SQL: DELETE FROM `questions` WHERE `id` = 20 [ RunTime:0.0003s ]
+
+[ 2016-04-20T21:20:32+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002380s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0051s ]
+SQL: DELETE FROM `questions` WHERE `id` = 25 [ RunTime:0.3664s ]
+
+[ 2016-04-20T21:20:32+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002456s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0091s ]
+SQL: DELETE FROM `questions` WHERE `id` = 20 [ RunTime:0.0005s ]
+
+[ 2016-04-20T21:23:46+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001599s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0110s ]
+SQL: DELETE FROM `questions` WHERE `id` = 24 [ RunTime:0.0560s ]
+
+[ 2016-04-20T21:24:20+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002693s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0053s ]
+SQL: DELETE FROM `questions` WHERE `id` = 23 [ RunTime:0.0423s ]
+
+[ 2016-04-20T21:24:26+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002392s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0050s ]
+SQL: DELETE FROM `questions` WHERE `id` = 23 [ RunTime:0.0003s ]
+
+[ 2016-04-20T21:24:27+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004501s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0064s ]
+SQL: DELETE FROM `questions` WHERE `id` = 22 [ RunTime:0.0599s ]
+
+[ 2016-04-20T21:25:26+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001655s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0114s ]
+SQL: DELETE FROM `questions` WHERE `id` = 21 [ RunTime:0.0573s ]
+
+[ 2016-04-20T21:25:38+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002135s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0122s ]
+SQL: DELETE FROM `questions` WHERE `id` = 21 [ RunTime:0.0002s ]
+
+[ 2016-04-20T21:25:38+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002460s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0057s ]
+SQL: DELETE FROM `questions` WHERE `id` = 19 [ RunTime:0.0731s ]
+
+[ 2016-04-20T21:30:55+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001770s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0137s ]
+SQL: DELETE FROM `questions` WHERE `id` = 11 [ RunTime:0.0751s ]
+
+[ 2016-04-20T21:31:09+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001621s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0051s ]
+SQL: DELETE FROM `questions` WHERE `id` = 17 [ RunTime:0.0395s ]
+
+[ 2016-04-20T21:31:21+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001956s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0053s ]
+SQL: DELETE FROM `questions` WHERE `id` = 15 [ RunTime:0.0635s ]
+
+[ 2016-04-20T21:38:21+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001662s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0124s ]
+SQL: DELETE FROM `questions` WHERE `id` = 18 [ RunTime:0.3558s ]
+

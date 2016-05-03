@@ -1,0 +1,354 @@
+[ 2016-04-24T14:37:06+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003015s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0747s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2016-04-24T14:40:46+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001612s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-04-24T14:56:48+08:00 ] ::1 /hstcesys/admin/admin/modify.html
+ERR: 无法加载控制器:Admin
+
+[ 2016-04-24T15:00:22+08:00 ] ::1 //hstcesys/admin/admin/checkPassword.html
+ERR: 无法加载控制器:Admin
+
+[ 2016-04-24T15:06:54+08:00 ] ::1 /hstcesys/admin/admin/checkPassword.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003277s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin_name' AND `admin_password` = '123' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-04-24T15:07:40+08:00 ] ::1 /hstcesys/admin/admin/checkPassword.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001678s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin_name' AND `admin_password` = '123456' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-24T15:08:43+08:00 ] ::1 /hstcesys/admin/admin/checkPassword.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002799s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin_name' AND `admin_password` = '123456' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-24T15:10:18+08:00 ] ::1 /hstcesys/admin/admin/checkPassword.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001630s ]
+
+[ 2016-04-24T15:10:22+08:00 ] ::1 /hstcesys/admin/admin/checkPassword.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002316s ]
+
+[ 2016-04-24T15:10:42+08:00 ] ::1 /hstcesys/admin/admin/checkPassword.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002592s ]
+
+[ 2016-04-24T15:11:11+08:00 ] ::1 /hstcesys/admin/admin/checkPassword.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001896s ]
+
+[ 2016-04-24T15:12:00+08:00 ] ::1 /hstcesys/admin/admin/checkPassword.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001762s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = '123' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2016-04-24T15:29:49+08:00 ] ::1 /hstcesys/admin/admin/checkPassword.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001749s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = '123456' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-24T15:34:40+08:00 ] ::1 /hstcesys/admin/admin/checkPassword.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001653s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-04-24T15:35:23+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001617s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-24T15:36:20+08:00 ] ::1 /hstcesys/admin/admin/checkPassword.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001635s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-24T16:01:23+08:00 ] ::1 /hstcesys/admin/admin/modifyNickname.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002555s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0047s ]
+SQL: UPDATE `admin` SET `nickname`='超级管理员' WHERE `admin_name` = 'admin' [ RunTime:0.1243s ]
+
+[ 2016-04-24T16:01:50+08:00 ] ::1 /hstcesys/admin/admin/checkPassword.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001597s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-24T16:01:50+08:00 ] ::1 /hstcesys/admin/admin/modifyPassword.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0049s ]
+NOTIC: [8] Undefined index: validate F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Model.class.php 第 1374 行.
+NOTIC: [8] Undefined index: auto F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Model.class.php 第 1307 行.
+
+[ 2016-04-24T16:02:19+08:00 ] ::1 /hstcesys/admin/admin/checkPassword.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001835s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-04-24T16:02:19+08:00 ] ::1 /hstcesys/admin/admin/modifyPassword.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002771s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0066s ]
+NOTIC: [8] Undefined index: validate F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Model.class.php 第 1374 行.
+NOTIC: [8] Undefined index: auto F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Model.class.php 第 1307 行.
+
+[ 2016-04-24T16:04:21+08:00 ] ::1 /hstcesys/admin/admin/checkPassword.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002690s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-24T16:04:27+08:00 ] ::1 /hstcesys/admin/admin/checkPassword.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001571s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-24T16:04:27+08:00 ] ::1 /hstcesys/admin/admin/modifyPassword.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001552s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0044s ]
+NOTIC: [8] Undefined index: validate F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Model.class.php 第 1374 行.
+NOTIC: [8] Undefined index: auto F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Model.class.php 第 1307 行.
+
+[ 2016-04-24T16:05:56+08:00 ] ::1 /hstcesys/admin/admin/checkPassword.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001853s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-24T16:05:56+08:00 ] ::1 /hstcesys/admin/admin/modifyPassword.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001618s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0065s ]
+SQL: UPDATE `admin` SET `admin_password`='30c8586794579fc0ea93c5b8561460b2' WHERE `admin_name` = 'admin' [ RunTime:0.0643s ]
+
+[ 2016-04-24T16:06:05+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001607s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-04-24T16:06:12+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002528s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = '30c8586794579fc0ea93c5b8561460b2' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-24T16:06:44+08:00 ] ::1 /hstcesys/admin/admin/modifyNickname.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002947s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0074s ]
+SQL: UPDATE `admin` SET `nickname`='管理员' WHERE `admin_name` = 'admin' [ RunTime:0.3739s ]
+
+[ 2016-04-24T16:07:28+08:00 ] ::1 /hstcesys/admin/admin/modifyNickname.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002804s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0081s ]
+SQL: UPDATE `admin` SET `nickname`='超级管理员' WHERE `admin_name` = 'admin' [ RunTime:0.0593s ]
+
+[ 2016-04-24T16:07:55+08:00 ] ::1 /hstcesys/admin/admin/modifyNickname.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006245s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0079s ]
+SQL: UPDATE `admin` SET `nickname`='' WHERE `admin_name` = 'admin' [ RunTime:0.3696s ]
+
+[ 2016-04-24T16:10:05+08:00 ] ::1 /hstcesys/admin/admin/modifyNickname.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003611s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0055s ]
+SQL: UPDATE `admin` SET `nickname`='超级管理员' WHERE `admin_name` = 'admin' [ RunTime:0.0567s ]
+
+[ 2016-04-24T16:12:44+08:00 ] ::1 /hstcesys/admin/admin/modifyNickname.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002602s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0069s ]
+SQL: UPDATE `admin` SET `nickname`='管理员' WHERE `admin_name` = 'admin' [ RunTime:0.0581s ]
+
+[ 2016-04-24T16:13:41+08:00 ] ::1 /hstcesys/admin/admin/modifyNickname.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002193s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0065s ]
+SQL: UPDATE `admin` SET `nickname`='超级管理员' WHERE `admin_name` = 'admin' [ RunTime:0.0332s ]
+
+[ 2016-04-24T16:13:55+08:00 ] ::1 /hstcesys/admin/admin/checkPassword.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004608s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = '30c8586794579fc0ea93c5b8561460b2' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-24T16:13:55+08:00 ] ::1 /hstcesys/admin/admin/modifyPassword.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001845s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0043s ]
+SQL: UPDATE `admin` SET `admin_password`='e10adc3949ba59abbe56e057f20f883e' WHERE `admin_name` = 'admin' [ RunTime:0.0714s ]
+
+[ 2016-04-24T16:14:49+08:00 ] ::1 /hstcesys/admin/admin/modifyNickname.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003216s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0062s ]
+SQL: UPDATE `admin` SET `nickname`='' WHERE `admin_name` = 'admin' [ RunTime:0.0913s ]
+
+[ 2016-04-24T16:15:58+08:00 ] ::1 /hstcesys/admin/admin/modifyNickname.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003440s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0079s ]
+SQL: UPDATE `admin` SET `nickname`='超级管理员' WHERE `admin_name` = 'admin' [ RunTime:0.0582s ]
+
+[ 2016-04-24T16:16:29+08:00 ] ::1 /hstcesys/admin/admin/modifyNickname.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003440s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0051s ]
+SQL: UPDATE `admin` SET `nickname`='我是超级管理员' WHERE `admin_name` = 'admin' [ RunTime:0.0589s ]
+
+[ 2016-04-24T16:32:26+08:00 ] ::1 /hstcesys/admin/admin/getAdmins.html
+ERR: 模板不存在:./Application/Admin/View/Admin/admin_list.html
+
+[ 2016-04-24T17:06:22+08:00 ] ::1 /hstcesys/admin/admin/modifyNickname.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001586s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0069s ]
+SQL: UPDATE `admin` SET `nickname`='超级管理员' WHERE `admin_name` = 'admin' [ RunTime:0.0612s ]
+
+[ 2016-04-24T19:24:09+08:00 ] ::1 /hstcesys/admin/admin/modifyNickname.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001639s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0052s ]
+SQL: UPDATE `admin` SET `nickname`='我是超级管理员' WHERE `admin_name` = 'admin' [ RunTime:0.3574s ]
+
+[ 2016-04-24T19:28:15+08:00 ] ::1 /hstcesys/admin/admin/modifyNickname.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0075s ]
+SQL: UPDATE `admin` SET `nickname`='超级管理员' WHERE `admin_name` = 'admin' [ RunTime:0.0692s ]
+
+[ 2016-04-24T19:31:08+08:00 ] ::1 /hstcesys/admin/admin/modifyNickname.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001621s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0050s ]
+SQL: UPDATE `admin` SET `nickname`='123' WHERE `admin_name` = 'admin' [ RunTime:0.0316s ]
+
+[ 2016-04-24T19:31:11+08:00 ] ::1 /hstcesys/admin/admin/modifyNickname.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001368s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0054s ]
+SQL: UPDATE `admin` SET `nickname`='123' WHERE `admin_name` = 'admin' [ RunTime:0.0794s ]
+
+[ 2016-04-24T19:31:52+08:00 ] ::1 /hstcesys/admin/admin/modifyNickname.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001588s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0067s ]
+SQL: UPDATE `admin` SET `nickname`='超级管理员' WHERE `admin_name` = 'admin' [ RunTime:0.0394s ]
+
+[ 2016-04-24T19:31:54+08:00 ] ::1 /hstcesys/admin/admin/modifyNickname.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001690s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0109s ]
+SQL: UPDATE `admin` SET `nickname`='超级管理员' WHERE `admin_name` = 'admin' [ RunTime:0.0386s ]
+
+[ 2016-04-24T19:36:29+08:00 ] ::1 /hstcesys/admin/admin/modifyNickname.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001254s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0051s ]
+SQL: UPDATE `admin` SET `nickname`='1231' WHERE `admin_name` = 'admin' [ RunTime:0.0340s ]
+
+[ 2016-04-24T19:37:12+08:00 ] ::1 /hstcesys/admin/admin/modifyNickname.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001634s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0054s ]
+SQL: UPDATE `admin` SET `nickname`='15223' WHERE `admin_name` = 'admin' [ RunTime:0.0722s ]
+
+[ 2016-04-24T19:40:15+08:00 ] ::1 /hstcesys/admin/admin/modifyNickname.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001514s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0058s ]
+SQL: UPDATE `admin` SET `nickname`='超级管理员' WHERE `admin_name` = 'admin' [ RunTime:0.0548s ]
+
+[ 2016-04-24T19:42:29+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001239s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-24T19:43:27+08:00 ] ::1 /hstcesys/admin/admin/checkPassword.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001181s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-04-24T19:43:27+08:00 ] ::1 /hstcesys/admin/admin/modifyPassword.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0042s ]
+SQL: UPDATE `admin` SET `admin_password`='30c8586794579fc0ea93c5b8561460b2' WHERE `admin_name` = 'admin' [ RunTime:0.0388s ]
+

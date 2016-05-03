@@ -1,0 +1,382 @@
+[ 2016-04-18T00:58:05+08:00 ] ::1 /hstcesys/admin/exams/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+SQL: SHOW COLUMNS FROM `exams` [ RunTime:0.0142s ]
+SQL: DELETE FROM `exams` WHERE `exam_id` = 7 [ RunTime:0.0585s ]
+
+[ 2016-04-18T00:58:07+08:00 ] ::1 /hstcesys/admin/exams/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+SQL: SHOW COLUMNS FROM `exams` [ RunTime:0.0189s ]
+SQL: DELETE FROM `exams` WHERE `exam_id` = 7 [ RunTime:0.0002s ]
+
+[ 2016-04-18T01:00:52+08:00 ] ::1 /hstcesys/admin/exams/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002484s ]
+SQL: SHOW COLUMNS FROM `exams` [ RunTime:0.0182s ]
+SQL: DELETE FROM `exams` WHERE `exam_id` = 8 [ RunTime:0.0791s ]
+
+[ 2016-04-18T01:02:02+08:00 ] ::1 /hstcesys/admin/exams/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001639s ]
+SQL: SHOW COLUMNS FROM `exams` [ RunTime:0.0143s ]
+SQL: DELETE FROM `exams` WHERE `exam_id` = 9 [ RunTime:0.0601s ]
+
+[ 2016-04-18T01:03:01+08:00 ] ::1 /hstcesys/admin/exams/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001938s ]
+SQL: SHOW COLUMNS FROM `exams` [ RunTime:0.0140s ]
+SQL: DELETE FROM `exams` WHERE `exam_id` = 10 [ RunTime:0.0705s ]
+
+[ 2016-04-18T01:04:17+08:00 ] ::1 /hstcesys/admin/exams/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004589s ]
+SQL: SHOW COLUMNS FROM `exams` [ RunTime:0.0179s ]
+SQL: DELETE FROM `exams` WHERE `exam_id` = 11 [ RunTime:0.0393s ]
+
+[ 2016-04-18T01:05:47+08:00 ] ::1 /hstcesys/admin/exams/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001707s ]
+SQL: SHOW COLUMNS FROM `exams` [ RunTime:0.0163s ]
+SQL: DELETE FROM `exams` WHERE `exam_id` = 12 [ RunTime:0.0634s ]
+
+[ 2016-04-18T01:25:00+08:00 ] ::1 /hstcesys/admin/exams/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002913s ]
+SQL: SHOW COLUMNS FROM `exams` [ RunTime:0.0174s ]
+SQL: DELETE FROM `exams` WHERE `exam_id` = 13 [ RunTime:0.0594s ]
+
+[ 2016-04-18T01:25:48+08:00 ] ::1 /hstcesys/admin/exams/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002818s ]
+SQL: SHOW COLUMNS FROM `exams` [ RunTime:0.0195s ]
+SQL: DELETE FROM `exams` WHERE `exam_id` = 14 [ RunTime:0.0577s ]
+
+[ 2016-04-18T01:30:59+08:00 ] ::1 /hstcesys/admin/exams/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002429s ]
+SQL: SHOW COLUMNS FROM `exams` [ RunTime:0.0157s ]
+SQL: DELETE FROM `exams` WHERE `exam_id` = 15 [ RunTime:0.0759s ]
+
+[ 2016-04-18T12:03:35+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001279s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0183s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-04-18T12:03:46+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-18T12:04:10+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-04-18T12:04:22+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001458s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-04-18T12:04:26+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-04-18T12:05:33+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-04-18T12:06:33+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-04-18T12:06:38+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-18T12:07:46+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-18T12:09:27+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001377s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-18T12:11:37+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001765s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-04-18T12:11:53+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001961s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-18T12:13:53+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000997s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2016-04-18T12:13:56+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-04-18T12:14:59+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002072s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-18T12:15:06+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001580s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-18T12:15:09+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001812s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-18T12:17:42+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001669s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-04-18T12:18:38+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002429s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-18T12:20:50+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001985s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-18T12:24:48+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002462s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-04-18T12:30:55+08:00 ] ::1 /hstcesys/admin/exams/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003267s ]
+SQL: SHOW COLUMNS FROM `exams` [ RunTime:0.0081s ]
+
+[ 2016-04-18T12:30:55+08:00 ] ::1 /hstcesys/admin/exams/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002900s ]
+SQL: SHOW COLUMNS FROM `exams` [ RunTime:0.0069s ]
+
+[ 2016-04-18T12:30:55+08:00 ] ::1 /hstcesys/admin/exams/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002982s ]
+SQL: SHOW COLUMNS FROM `exams` [ RunTime:0.0095s ]
+
+[ 2016-04-18T12:31:50+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002862s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0055s ]
+SQL: DELETE FROM `questions` WHERE `id` = 5 [ RunTime:0.0635s ]
+
+[ 2016-04-18T12:34:07+08:00 ] ::1 /hstcesys/admin/questions/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002582s ]
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0089s ]
+SQL: DELETE FROM `questions` WHERE `id` = 16 [ RunTime:0.0530s ]
+
+[ 2016-04-18T13:49:59+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002351s ]
+NOTIC: [8] Undefined index: excelData F:\PHP\Workspace\hstcesys\Application\Admin\Controller\QuestionsController.class.php 第 152 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] finfo_file(): Empty filename or path F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: error F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 320 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 331 行.
+
+[ 2016-04-18T13:50:13+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001515s ]
+NOTIC: [8] Undefined index: excelData F:\PHP\Workspace\hstcesys\Application\Admin\Controller\QuestionsController.class.php 第 152 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] finfo_file(): Empty filename or path F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: error F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 320 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 331 行.
+
+[ 2016-04-18T13:50:32+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001637s ]
+NOTIC: [8] Undefined index: excelData F:\PHP\Workspace\hstcesys\Application\Admin\Controller\QuestionsController.class.php 第 152 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] finfo_file(): Empty filename or path F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: error F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 320 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 331 行.
+
+[ 2016-04-18T13:53:34+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001523s ]
+NOTIC: [8] Undefined index: excelData F:\PHP\Workspace\hstcesys\Application\Admin\Controller\QuestionsController.class.php 第 152 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] finfo_file(): Empty filename or path F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: error F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 320 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 331 行.
+
+[ 2016-04-18T13:53:39+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002218s ]
+NOTIC: [8] Undefined index: excelData F:\PHP\Workspace\hstcesys\Application\Admin\Controller\QuestionsController.class.php 第 152 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] finfo_file(): Empty filename or path F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: error F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 320 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 331 行.
+
+[ 2016-04-18T13:57:09+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001573s ]
+NOTIC: [8] Undefined index: excelData F:\PHP\Workspace\hstcesys\Application\Admin\Controller\QuestionsController.class.php 第 152 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] finfo_file(): Empty filename or path F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: error F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 320 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 331 行.
+
+[ 2016-04-18T14:38:07+08:00 ] ::1 /hstcesys/admin/scores/getscores.html
+ERR: 无法加载控制器:Scores
+
+[ 2016-04-18T17:56:28+08:00 ] ::1 /hstcesys/admin/scores/getscores.html
+ERR: 模板不存在:./Application/Admin/View/Scores/Array.html
+
+[ 2016-04-18T17:56:34+08:00 ] ::1 /hstcesys/admin/scores/getscores.html
+ERR: 模板不存在:./Application/Admin/View/Scores/Array.html
+
+[ 2016-04-18T17:56:41+08:00 ] ::1 /hstcesys/admin/scores/getscores.html
+ERR: 模板不存在:./Application/Admin/View/Scores/Array.html
+
+[ 2016-04-18T17:57:26+08:00 ] ::1 /hstcesys/admin/scores/getscores.html
+ERR: 模板不存在:./Application/Admin/View/Scores/Array.html
+
+[ 2016-04-18T18:41:15+08:00 ] ::1 /hstcesys/admin/scores/getscores.html
+ERR: 模板不存在:./Application/Admin/View/Scores/Array.html
+
+[ 2016-04-18T18:41:23+08:00 ] ::1 /hstcesys/admin/scores/getscores.html
+ERR: 模板不存在:./Application/Admin/View/Scores/Array.html
+
+[ 2016-04-18T22:43:48+08:00 ] ::1 /hstcesys/admin/exams/changeExamStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001522s ]
+SQL: SHOW COLUMNS FROM `exams` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `scores` [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exams` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `exams` LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `scores` WHERE `exam_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' F:\PHP\Workspace\hstcesys\Application\Runtime\Cache\Admin\b96c39947f637e83bc8e228f82d8057e.php 第 258 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001834s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001992s ]
+
+[ 2016-04-18T22:50:19+08:00 ] ::1 /hstcesys/admin/exams/changeExamStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001560s ]
+ERR: 1146:Table 'hstces.e_xams' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `e_xams`
+ERR: 1146:Table 'hstces.e_xams' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `e_xams`
+
+[ 2016-04-18T22:53:38+08:00 ] ::1 /hstcesys/admin/exams/changeExamStatus
+ERR: 1146:Table 'hstces.e_xams' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `e_xams`
+
+[ 2016-04-18T22:56:59+08:00 ] ::1 /hstcesys/admin/exams/changeExamStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002488s ]
+SQL: SHOW COLUMNS FROM `exams` [ RunTime:0.0097s ]
+SQL: SELECT `status` FROM `exams` WHERE ( 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `exams` SET `status`='0' WHERE ( 1 ) [ RunTime:0.0563s ]
+
+[ 2016-04-18T22:57:03+08:00 ] ::1 /hstcesys/admin/exams/changeExamStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001511s ]
+SQL: SHOW COLUMNS FROM `exams` [ RunTime:0.0044s ]
+SQL: SELECT `status` FROM `exams` WHERE ( 1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `exams` SET `status`='1' WHERE ( 1 ) [ RunTime:0.0445s ]
+

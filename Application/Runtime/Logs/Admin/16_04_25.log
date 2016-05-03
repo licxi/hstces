@@ -1,0 +1,407 @@
+[ 2016-04-25T12:24:14+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002047s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = '30c8586794579fc0ea93c5b8561460b2' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-04-25T14:36:13+08:00 ] ::1 /hstcesys/admin/admin/addAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001881s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Model.class.php 第 1374 行.
+NOTIC: [8] Undefined index: auto F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Model.class.php 第 1307 行.
+SQL: INSERT INTO `admin` (`admin_name`,`nickname`,`admin_password`) VALUES ('licxi','JJ','417708459') [ RunTime:0.0332s ]
+
+[ 2016-04-25T16:57:45+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002911s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001160s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001296s ]
+
+[ 2016-04-25T17:00:41+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002771s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002619s ]
+
+[ 2016-04-25T17:04:11+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002225s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+NOTIC: [2] move_uploaded_file(./Uploads/file2016-04-25/新建 Microsoft Excel 工作表 _2_.xlsx): failed to open stream: Invalid argument F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload\Driver\Local.class.php 第 97 行.
+NOTIC: [2] move_uploaded_file(): Unable to move 'F:\PHP\wamp\tmp\php7EA4.tmp' to './Uploads/file2016-04-25/新建 Microsoft Excel 工作表 _2_.xlsx' F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload\Driver\Local.class.php 第 97 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001697s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001835s ]
+
+[ 2016-04-25T17:05:03+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004481s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+NOTIC: [2] move_uploaded_file(./Uploads/file/2016-04-25/新建 Microsoft Excel 工作表 _2_.xlsx): failed to open stream: Invalid argument F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload\Driver\Local.class.php 第 97 行.
+NOTIC: [2] move_uploaded_file(): Unable to move 'F:\PHP\wamp\tmp\php4A04.tmp' to './Uploads/file/2016-04-25/新建 Microsoft Excel 工作表 _2_.xlsx' F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload\Driver\Local.class.php 第 97 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002633s ]
+
+[ 2016-04-25T17:11:13+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002201s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+NOTIC: [8] Undefined index: saveName F:\PHP\Workspace\hstcesys\Application\Admin\Controller\FileController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001087s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001227s ]
+
+[ 2016-04-25T17:13:05+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002393s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+NOTIC: [2] move_uploaded_file(./Uploads/file//新建 Microsoft Excel 工作表.xlsx): failed to open stream: Invalid argument F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload\Driver\Local.class.php 第 97 行.
+NOTIC: [2] move_uploaded_file(): Unable to move 'F:\PHP\wamp\tmp\phpA2E2.tmp' to './Uploads/file//新建 Microsoft Excel 工作表.xlsx' F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload\Driver\Local.class.php 第 97 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001163s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001334s ]
+
+[ 2016-04-25T17:14:06+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002448s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+NOTIC: [2] move_uploaded_file(./Uploads/file/新建 Microsoft Excel 工作表.xlsx): failed to open stream: Invalid argument F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload\Driver\Local.class.php 第 97 行.
+NOTIC: [2] move_uploaded_file(): Unable to move 'F:\PHP\wamp\tmp\php9225.tmp' to './Uploads/file/新建 Microsoft Excel 工作表.xlsx' F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload\Driver\Local.class.php 第 97 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001712s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001966s ]
+
+[ 2016-04-25T17:15:07+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003478s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+NOTIC: [2] move_uploaded_file(./Uploads/./Uploads/file/新建 Microsoft Excel 工作表.xlsx): failed to open stream: Invalid argument F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload\Driver\Local.class.php 第 97 行.
+NOTIC: [2] move_uploaded_file(): Unable to move 'F:\PHP\wamp\tmp\php7E99.tmp' to './Uploads/./Uploads/file/新建 Microsoft Excel 工作表.xlsx' F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload\Driver\Local.class.php 第 97 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001186s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001336s ]
+
+[ 2016-04-25T17:16:15+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001626s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001564s ]
+
+[ 2016-04-25T17:17:12+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001566s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+NOTIC: [2] move_uploaded_file(./Uploads//2016-04-25/新建 Microsoft Excel 工作表.xlsx): failed to open stream: Invalid argument F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload\Driver\Local.class.php 第 97 行.
+NOTIC: [2] move_uploaded_file(): Unable to move 'F:\PHP\wamp\tmp\php678F.tmp' to './Uploads//2016-04-25/新建 Microsoft Excel 工作表.xlsx' F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload\Driver\Local.class.php 第 97 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001255s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001386s ]
+
+[ 2016-04-25T17:17:43+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003839s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001818s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002047s ]
+
+[ 2016-04-25T17:20:17+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001696s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002306s ]
+
+[ 2016-04-25T17:20:46+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004172s ]
+NOTIC: [8] Undefined index: material F:\PHP\Workspace\hstcesys\Application\Admin\Controller\FileController.class.php 第 31 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] finfo_file(): Empty filename or path F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: error F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 320 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 331 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001733s ]
+
+[ 2016-04-25T17:22:20+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004267s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+NOTIC: [2] move_uploaded_file(./Uploads//2016-04-25/大杂烩_养生谈.zip): failed to open stream: Invalid argument F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload\Driver\Local.class.php 第 97 行.
+NOTIC: [2] move_uploaded_file(): Unable to move 'F:\PHP\wamp\tmp\php19B8.tmp' to './Uploads//2016-04-25/大杂烩_养生谈.zip' F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload\Driver\Local.class.php 第 97 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002068s ]
+
+[ 2016-04-25T17:22:43+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003536s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001868s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002217s ]
+
+[ 2016-04-25T17:23:11+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001722s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001869s ]
+
+[ 2016-04-25T17:29:48+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002437s ]
+NOTIC: [8] Undefined index: material F:\PHP\Workspace\hstcesys\Application\Admin\Controller\FileController.class.php 第 31 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] finfo_file(): Empty filename or path F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: error F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 320 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 331 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001908s ]
+
+[ 2016-04-25T17:30:28+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003212s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001814s ]
+
+[ 2016-04-25T17:31:14+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001842s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002296s ]
+
+[ 2016-04-25T17:31:32+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002348s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002555s ]
+
+[ 2016-04-25T17:32:23+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003893s ]
+
+[ 2016-04-25T17:32:48+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002011s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001109s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001233s ]
+
+[ 2016-04-25T17:50:58+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002005s ]
+NOTIC: [8] Undefined index: material F:\PHP\Workspace\hstcesys\Application\Admin\Controller\FileController.class.php 第 31 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] finfo_file(): Empty filename or path F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: error F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 320 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 331 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001094s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001204s ]
+
+[ 2016-04-25T17:52:51+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004432s ]
+NOTIC: [8] Undefined index: material F:\PHP\Workspace\hstcesys\Application\Admin\Controller\FileController.class.php 第 31 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] finfo_file(): Empty filename or path F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: error F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 320 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 331 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001247s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001371s ]
+
+[ 2016-04-25T17:53:22+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004423s ]
+NOTIC: [8] Undefined index: material F:\PHP\Workspace\hstcesys\Application\Admin\Controller\FileController.class.php 第 31 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] finfo_file(): Empty filename or path F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: error F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 320 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 331 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001073s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001282s ]
+
+[ 2016-04-25T18:12:10+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002073s ]
+NOTIC: [8] Undefined index: material F:\PHP\Workspace\hstcesys\Application\Admin\Controller\FileController.class.php 第 31 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] finfo_file(): Empty filename or path F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: error F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 320 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 331 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001847s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002138s ]
+
+[ 2016-04-25T18:14:27+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001691s ]
+NOTIC: [8] Undefined index: material F:\PHP\Workspace\hstcesys\Application\Admin\Controller\FileController.class.php 第 31 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] finfo_file(): Empty filename or path F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: error F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 320 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 331 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004998s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005217s ]
+
+[ 2016-04-25T20:53:18+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001490s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = '30c8586794579fc0ea93c5b8561460b2' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2016-04-25T20:53:47+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+NOTIC: [8] Undefined index: material F:\PHP\Workspace\hstcesys\Application\Admin\Controller\FileController.class.php 第 31 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] finfo_file(): Empty filename or path F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: error F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 320 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 331 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002497s ]
+
+[ 2016-04-25T20:57:36+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002326s ]
+NOTIC: [8] Undefined index: material F:\PHP\Workspace\hstcesys\Application\Admin\Controller\FileController.class.php 第 31 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] finfo_file(): Empty filename or path F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: error F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 320 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 331 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002658s ]
+
+[ 2016-04-25T21:01:35+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
+NOTIC: [8] Undefined index: material F:\PHP\Workspace\hstcesys\Application\Admin\Controller\FileController.class.php 第 31 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] finfo_file(): Empty filename or path F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: error F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 320 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 331 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000972s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001086s ]
+
+[ 2016-04-25T21:24:38+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002183s ]
+NOTIC: [8] Undefined index: material F:\PHP\Workspace\hstcesys\Application\Admin\Controller\FileController.class.php 第 31 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] finfo_file(): Empty filename or path F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: error F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 320 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 331 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001555s ]
+
+[ 2016-04-25T21:27:42+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002861s ]
+NOTIC: [8] Undefined index: material F:\PHP\Workspace\hstcesys\Application\Admin\Controller\FileController.class.php 第 31 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] finfo_file(): Empty filename or path F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: error F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 320 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 331 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001566s ]
+
+[ 2016-04-25T21:30:25+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001925s ]
+NOTIC: [8] Undefined index: material F:\PHP\Workspace\hstcesys\Application\Admin\Controller\FileController.class.php 第 31 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [2] finfo_file(): Empty filename or path F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 186 行.
+NOTIC: [8] Undefined index: error F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 320 行.
+NOTIC: [8] Undefined index: tmp_name F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 331 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003883s ]
+
+[ 2016-04-25T21:37:40+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001833s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+ERR: 1146:Table 'hstces.file' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `file`
+ERR: 1146:Table 'hstces.file' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `file`
+
+[ 2016-04-25T21:39:57+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002087s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+SQL: SHOW COLUMNS FROM `files` [ RunTime:0.0042s ]
+SQL: INSERT INTO `files` (`file_name`,`file_hash`,`file_save_name`) VALUES ('菜谱.rar','3b36580434e361c2bb3ba45b52fa3d4600ac160c','571e1e2d508b1.rar') [ RunTime:0.0570s ]
+
+[ 2016-04-25T21:41:50+08:00 ] ::1 /hstcesys/admin/file/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003835s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+SQL: SHOW COLUMNS FROM `files` [ RunTime:0.0051s ]
+SQL: INSERT INTO `files` (`file_name`,`file_hash`,`file_save_name`) VALUES ('hetaozhou.png','b49eab6b333c1462f35f84bac4e253d987a6bc27','571e1e9e46a27.png') [ RunTime:0.0899s ]
+

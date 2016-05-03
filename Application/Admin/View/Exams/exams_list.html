@@ -1,0 +1,114 @@
+<include file="public/header"/>
+<!-- 当删除考试是提示管理员 -->
+<div class="modal fade" id="del_exam" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">确认删除</h4>
+      </div>
+      <div class="modal-body">
+        <h3>此操作将会删除该次考试的所有内容，包括用户的考试成绩！</h3> 
+        <h3>删除是不可恢复的,你确认要删除吗?</h3> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <a type="submit" id="del" class="btn btn-primary" data-dismiss="modal">删除</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="my_table">
+  <h2>考试列表</h2><hr>
+      <if condition="$exams_list">
+      <div class="table-responsive">
+        <table class="table table-hover table-bordered table-striped center">
+          <thead>
+            <tr>
+              <th style="width: 10%">编号</th>
+              <th style="width: 30%">标题</th>
+              <th style="width: 15%">开始时间</th>
+              <th style="width: 15%">结束时间</th>
+              <th style="width: 10%">状态</th>
+              <th style="width: 10%">出题人</th>
+              <th style="width: 10%">考试人数</th>
+              <th style="width: 9%">操作</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <foreach name="exams_list" item="vo">
+            <tr id="tr{$vo.exam_id}">
+              <td >{$vo.exam_id}</td>
+              <td ><a href="{:U("admin/questions/index?exam_id=$vo[exam_id]&title=$vo[title]",'','')}">{$vo.title}</a></td>
+              <td >{$vo.start_time}</td>
+              <td >{$vo.end_time}</td>
+              <td ><span id="span{$vo.exam_id}">{$vo.status}</span></td>
+              <td >{$vo.author}</td>
+              <td >{$vo.total_number}</td>
+              <td >
+
+                <div class="dropdown">
+                  <button type="button" class="btn dropdown-toggle"
+                    id="dropdownMenu1" data-toggle="dropdown">
+                    操作 <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu"
+                    aria-labelledby="dropdownMenu1" style="min-width: 80px;">
+                    <li role="presentation"><a class="btn" role="menuitem" tabindex="-1" onclick="change_exam_status({$vo.exam_id})" 
+                      id="a{$vo.exam_id}"><if condition="$vo[status] eq '进行中'">终止<else />开始</if></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"
+                      href="{:U("admin/scores/getScores?exam_id=$vo[exam_id]&title=$vo[title]",'','')}">成绩</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"
+                      href="{:U("admin/exams/edit?exam_id=$vo[exam_id]",'','')}">编辑</a></li>
+                    <li><a class="btn" onClick="del({$vo.exam_id})">删除</a></li>
+                  </ul>
+                </div></td>
+            </tr>
+            </foreach>
+
+          </tbody>
+        </table>
+        </div>
+      <else />
+      <tr>
+        <td colspan="13">暂无相关信息</td>
+      </tr>
+      </if>
+      <include file="Public/page" />
+</div>
+<script>
+  function del(exam_id) {
+    if(confirm("此操作将会删除该次考试的所有内容，包括用户的考试成绩,且不能恢复！确定要删除吗？")){
+      var url = "{:U('admin/exams/del')}";
+      jQuery.post(url,{"exam_id" : exam_id},
+            function(msg) {
+              if (msg.info == 'ok') {
+                $("#tr"+exam_id).remove();//在表格中移除被删除的数据
+                $("#total").text("共"+{$total-1}+"条记录");
+              } else {
+                alert("删除失败");
+              }
+            }, 'json').error(function() {
+              alert("网络连接错误，请稍后再试");
+        });
+    }
+  }
+  function change_exam_status(exam_id){
+      var url = "{:U('admin/exams/changeExamStatus')}";
+      jQuery.post(url,{"exam_id" : exam_id},
+            function(msg) {
+              if (msg.info == 'ok') {
+                $("#a"+exam_id).text(msg.msg);
+                $("#span"+exam_id).text(msg.tip);
+              } else if(msg.info === "error"){
+                alert(msg.msg);
+              }
+            }, 'json').error(function() {
+              alert("网络连接错误，请稍后再试");
+        });
+  }
+</script>
+<include file="public/footer"/>
