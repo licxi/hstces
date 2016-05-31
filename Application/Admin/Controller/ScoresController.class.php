@@ -6,48 +6,15 @@ use Think\Controller;
 
 class ScoresController extends AuthController {
 	public function _empty() {
-		$this->getExams ();
+		
 	}
-	public function index() {
-		$this->getExams ();
-	}
-	/*
-	 * 添加考试
-	 */
-	public function addExam() {
-		$this->display ( "exams_add" );
-	}
-	/*
-	 * 保存考试信息 
-	 */
-	public function save() {
-		$title = I ( "title" );
-		$author = $_SESSION ["admin_name"];
-		$start_time = I ( "start_time", time () );
-		$end_time = I ( "end_time", time () );
-		$start_time = strtotime ( $start_time ); // 将格式化的时间转换为时间戳
-		$end_time = strtotime ( $end_time );
-		$exams = M ( "Exams" );
-		$data = array (
-				"title" => $title,
-				"start_time" => $start_time,
-				"end_time" => $end_time,
-				"status" => 1,
-				"author" => $author 
-		);
-		if ($exams->add ( $data ) > 0) {
-			$this->success ( "添加成功！", U ( "Admin/Exams/index","","" ) );
-		} else {
-			$this->error ( "添加失败！" );
-		}
-	}
-	
 	/*
 	 * 获取某次考试的参与考试的所得成绩
 	 */
 	public function getScores() {
 		$exam_id = I ( "exam_id", "" );
-		$title = I("title","试题");
+		$key = I("key",-1);
+		$title = M("Exams")->where(array("exam_id"=>$exam_id))->getField("title");
 		$this->assign("title",$title);
 		$scores = D ( "Scores" );
 		/*
@@ -59,10 +26,14 @@ class ScoresController extends AuthController {
 		
 		$filter = array ();
 		if ($exam_id && isset ( $exam_id )) {
-			$this->assign ( '$exam_id', $exam_id );
+			$this->assign ( 'exam_id', $exam_id );
 			$filter = array (
 					"exam_id" => $exam_id 
 			);
+		}
+		if($key != -1){
+			$this->assign("key",$key);
+			$filter["_query"] = "student_id=$key";
 		}
 		
 		// 数据过多，分页显示
@@ -77,18 +48,63 @@ class ScoresController extends AuthController {
 		}
 		$scores_list = array ();
 		if ($total > 0) {
-			$scores_list = $scores->where ( $filter )->relation ( true )->limit ( $Page->firstRow . ',' . $Page->listRows )->select ();
+			$scores_list = $scores->where ( $filter )->order("score desc,use_time")->relation ( true )->limit ( $Page->firstRow . ',' . $Page->listRows )->select ();
+		}
+		foreach ($scores_list as $key => $score){
+			if($score['family_difficulties']==1){
+				$scores_list[$key]['family_difficulties']="是";
+			}else{
+				$scores_list[$key]['family_difficulties']="否";
+			}
+			if($score['support']==1){
+				$scores_list[$key]['support']="是";
+			}else{
+				$scores_list[$key]['support']="否";
+			}
+			if($score['loan']==1){
+				$scores_list[$key]['loan']="是";
+			}else{
+				$scores_list[$key]['loan']="否";
+			}
 		}
 		$this->assign ( "scores_list", $scores_list );
 		$this->display ( "scores_list" );
 		//var_dump($scores_list);
 	}
 	/*
-	 * 删除
+	 * 删除一条成绩
 	 */
 	public function del() {
-		
+		$score = M("Scores");
+		$id = I("id",-1);
+		$exam_id = I("exam_id",-1);
+		if($id != -1 && $exam_id != -1){
+			$where = array(
+					"id"		=> $id,
+					"exam_id"	=> $exam_id
+			);
+			$result = $score->where($where)->delete();
+			if($result){
+				$data = array(
+						"info"	=> "ok",
+						"msg"	=> "删除成功"
+				);
+			}else{
+				$data = array(
+						"info"	=> "error",
+						"msg"	=> "删除失败"
+				);
+			}
+		} else {
+			$data = array(
+					"info"	=> "error",
+					"msg"	=> "未提供有效编号"
+			);
+		}
+		$this->ajaxReturn($data);
 	}
+	
+	
 	public function scoresExport(){
 		$this->display("scores_export");
 		
@@ -98,19 +114,57 @@ class ScoresController extends AuthController {
 	 * 导出成绩数据
 	 */
 	public function export(){
-		$scores = M("Scores");
-		$exam_id = I("exam_id","");
-		$number = I("number","");
-		$count = $scores->where($exam_id)->count();
-		if($number>$count){
-			$number = $count;
+		$exam_id = I ( "exam_id", "" );
+		$key = I("key",-1);
+		$title = M("Exams")->where(array("exam_id"=>$exam_id))->getField("title");
+		$this->assign("title",$title);
+		$scores = D ( "Scores" );
+		$filter = array ();
+		if ($exam_id && isset ( $exam_id )) {
+			$this->assign ( 'exam_id', $exam_id );
+			$filter = array (
+					"exam_id" => $exam_id
+			);
 		}
-		if($number == ""){
-			$scores_list = $scores->select ();
-		} else{
-			$scores_list = $scores->order("score desc,use_time")->limit(0,$number)->select ();
+		if($key != -1){
+			$this->assign("key",$key);
+			$filter["_query"] ="student_id=$key";
 		}
 		
+		// 数据过多，分页显示
+		$total = $scores->where ( $filter )->count ();
+		
+		if ($total > 0) {
+			$perNum = 10;
+			$Page = new \Think\Page ( $total, $perNum );
+			$show = $Page->show ();
+			$this->assign ( 'total', $total );
+			$this->assign ( 'page', $show );
+		}
+		$scores_list = array ();
+		if ($total > 0) {
+			$scores_list = $scores->where ( $filter )->order("score desc,use_time")->relation ( true )->limit ( $Page->firstRow . ',' . $Page->listRows )->select ();
+		}
+		foreach ($scores_list as $key => $score){
+			if($score['family_difficulties']==1){
+				$scores_list[$key]['family_difficulties']="是";
+			}else{
+				$scores_list[$key]['family_difficulties']="否";
+			}
+			if($score['support']==1){
+				$scores_list[$key]['support']="是";
+			}else{
+				$scores_list[$key]['support']="否";
+			}
+			if($score['loan']==1){
+				$scores_list[$key]['loan']="是";
+			}else{
+				$scores_list[$key]['loan']="否";
+			}
+			$scores_list[$key]['student_id']="'".$score['student_id'];
+			$scores_list[$key]['exam_time']= date("Y-m-d H:i", $score['exam_time']);
+		}
+		//var_dump($scores_list);
 		$this->scores_export ( $scores_list );
 	}
 	
@@ -119,13 +173,13 @@ class ScoresController extends AuthController {
 	protected function scores_export($scores_list = array()) {
 		$data = array ();
 		$data = $scores_list;
-		$headArr = array ("编号","学号", "姓名","得分","用时","院系");
+		$headArr = array ("编号","学号","得分","用时","试卷编号","考试时间","姓名","家庭困难","受资助","贷款","院系编号","院系");
 		$filename = "scores_list";
 	
 		$this->getExcel ( $filename, $headArr, $data );
 	}
 	private function getExcel($fileName, $headArr, $data) {
-		// 导入PHPExcel类库，因为PHPExcel没有用命名空间，只能inport导入
+		// 导入PHPExcel类库，因为PHPExcel没有用命名空间，只能import导入
 		// import ( "Org.Util.PHPExcel" );
 		vendor ( "PHPExcel.PHPExcel" );
 		import ( "Org.Util.PHPExcel.Writer.Excel2007" );

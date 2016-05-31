@@ -1,0 +1,18 @@
+<include file="public/header"/>
+
+<div class="container">
+<h2>考试资料下载</h2><hr>
+    <div class="panel panel-primary" style="width: 94%;display: inline-block; box-shadow: 5px 5px 5px #888;">
+        <div class="panel-heading">资料列表</div>
+    <div class="panel-body">
+      <div class="list-group">
+        <if condition="$files_list"> <foreach name="files_list" item="vo">
+        <a href="{:U("home/file/download?file_id=$vo[file_id]","","")}" class="list-group-item">{$vo.file_name} 
+        <span style="float: right !important;">{$vo.file_describe}</span></a> </foreach> <else /> <span
+          style="color: red">没有资料可供下载！</span> </if>
+      </div>
+    </div>
+    </div>
+</div>
+
+<include file="public/footer"/>

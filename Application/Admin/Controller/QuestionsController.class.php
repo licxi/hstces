@@ -13,7 +13,7 @@ class QuestionsController extends AuthController {
 	 */
 	public function _empty($action = 'index') {
 		$exam_id = I("exam_id",-1);
-		$title = I("title");
+		$title = M("Exams")->where(array("exam_id"=>$exam_id))->getField("title");
 		if($title && isset($title)){
 			$this->assign("title",$title);
 		}
@@ -59,7 +59,8 @@ class QuestionsController extends AuthController {
 	// 添加题目
 	public function add() {
 		$exam_id = I("exam_id");
-		$this->assign("exam_id",$exam_id);
+		$questions_info["exam_id"] = $exam_id;
+		$this->assign("questions_info",$questions_info);
 		$this->display ( 'questions_add' );
 	}
 	
@@ -83,7 +84,7 @@ class QuestionsController extends AuthController {
 	
 	// 获取某个题目的内容
 	public function edit() {
-		$id = I ( 'id' );
+		$id = I ( 'id',-1 );
 		$questions_info = M ( 'Questions' )->find ( $id );
 		$this->assign ( 'questions_info', $questions_info );
 		$this->display ( 'questions_add' );
@@ -91,6 +92,7 @@ class QuestionsController extends AuthController {
 	
 	// 保存来自表单的数据
 	public function save() {
+		$exam_id = I("exam_id");
 		$id = I ( 'id' );
 		$questions = M ( 'Questions' );
 		$info = $questions->find ( $id );
@@ -101,7 +103,7 @@ class QuestionsController extends AuthController {
 						'id' => $id 
 				) )->save ();
 				if ($result || $result === 0) {
-					$this->success("修改成功！",U("admin/questions/index","",""));
+					$this->success("修改成功！",U("admin/questions/index?exam_id=$exam_id","",""));
 				} else if ($result === FALSE) {
 					$this->error("修改失败！请重试！");
 				}
@@ -109,7 +111,7 @@ class QuestionsController extends AuthController {
 				// 入库操作
 				$result = $questions->add ();
 				if ($result) {
-					$this->success("添加成功！",U("admin/questions/index","",""));
+					$this->success("添加成功！",U("admin/questions/index?exam_id=$exam_id","",""));
 				} else {
 					$this->error("添加失败！请重试！");
 				}
@@ -137,10 +139,14 @@ class QuestionsController extends AuthController {
 	
 	// 导入数据页面
 	public function import() {
+		$exam_id = $_GET["exam_id"];
+		//var_dump($exam_id);
+		$this->assign("exam_id",$exam_id);
 		$this->display ( 'questions_import' );
 	}
 	// 上传方法
 	public function upload() {
+		$exam_id = $_GET["exam_id"];
 		header ( "Content-Type:text/html;charset=utf-8" );
 		$upload = new \Think\Upload (); // 实例化上传类
 		$upload->maxSize = 0; // 设置附件上传大小,不限大小
@@ -157,15 +163,15 @@ class QuestionsController extends AuthController {
 		if (! $info) { // 上传错误提示错误信息
 			$this->error ( $upload->getError () );
 		} else { // 上传成功
-			$this->questions_import ( $filename, $exts );
+			$this->questions_import ( $filename, $exts,$exam_id);
 		}
 	}
 	
 	
 	
 	// 导入数据方法
-	protected function questions_import($filename, $exts = 'xls') {
-		$exam_id = $_SESSION['exam_id'];
+	protected function questions_import($filename, $exts = 'xls',$exam_id) {
+		//$exam_id = $_SESSION['exam_id'];
 		// 导入PHPExcel类库，因为PHPExcel没有用命名空间，只能import导入
 		/* import("Org.Util.PHPExcel"); */
 		// 此方法无法加载，原因待查
@@ -192,13 +198,13 @@ class QuestionsController extends AuthController {
 		// 循环获取表中的数据，$currentRow表示当前行，从哪行开始读取数据，索引值从0开始
 		for($currentRow = 2; $currentRow <= $allRow; $currentRow ++) {
 			// 从哪列开始，A表示第一列
-			for($currentColumn = 'A'; $currentColumn <= $allColumn; $currentColumn ++) {
+			for($currentColumn = 'A'; $currentColumn <= 'F'; $currentColumn ++) {
 				// 数据坐标
 				$address = $currentColumn . $currentRow;
 				// 读取到的数据，保存到数组$arr中
 				$cell = $currentSheet->getCell ( $address )->getValue ();
 				// $cell = $data[$currentRow][$currentColumn];
-				if ($cell instanceof PHPExcel_RichText) {
+				if ($cell instanceof \PHPExcel_RichText) {
 					$cell = $cell->__toString ();
 				}
 				$row [] = $cell;
@@ -210,12 +216,13 @@ class QuestionsController extends AuthController {
 		//var_dump ( $data ); // 测试是否能获取数据
 		
 		if (isset ( $data )) {
-			$this->save_import ( $data );
+			unlink ( $filename );
+			$this->save_import ( $data ,$exam_id);
 		}
 	}
 	
 	// 保存导入数据
-	public function save_import($data) {
+	public function save_import($data,$exam_id=-1) {
 		$questions = M ( 'Questions' );
 		foreach ( $data as $k => $v ) {
 			$q = array (
@@ -251,9 +258,8 @@ class QuestionsController extends AuthController {
 			//$this->success ( '产品导入成功', 'Admin/questions/index' );
 			$data = array(
 					"info"  => "ok",
-					"url"	=> U("Admin/questions/index","","")
+					"url"	=> U("Admin/questions/index?exam_id=$exam_id","","")
 			);
-
 		} else {
 			$data = array(
 					"info"  => "error",

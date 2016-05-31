@@ -33,22 +33,42 @@
 
       <h2 style="text-align: center;">
         <span class="navbar-left">成绩管理</span><span>{$title}</span><a class="btn btn-info navbar-right" data-toggle="modal" 
-        data-target="#scores_export">导出成绩</a><hr>
+        data-target="#scores_export">导出成绩</a>
+        <a class="btn btn-info navbar-right" href="{:U("admin/scores/getScores?exam_id=$exam_id","","")}" style="margin-right: 5px">所有成绩</a><hr>
         <!-- 标题 end -->
         
-      </h2><hr>
+      </h2>
+      <!-- <form id="searchForm" name="searchform" class="well form-search"
+          action="{:U("admin/scores/getscores","","")}" method="GET">
+          <input name="exam_id" type="hidden" value="{$exam_id}" />
+          <div class="row">
+            <div class="col-sm-6 col-lg-6">
+              <div class="input-group input-group-sm">
+                  <span class="input-group-addon" id="sizing-addon1">学号</span>
+                  <input type="text" name="key" value="{$key}"class="form-control" placeholder="支持模糊查询" aria-describedby="sizing-addon1">
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-6">
+              <input type="submit" class="btn btn-info" value="搜索" /> 
+            </div>
+          </div>
+        </form> -->
       <if condition="$scores_list">
       <div class="dataBox">
       <div class="table-responsive">
         <table class="table table-hover table-bordered table-striped center">
           <thead>
             <tr>
-              <th style="width: 10%">编号</th>
+              <th style="width: 5%">编号</th>
               <th style="width: 10%">学号</th>
-              <th style="width: 15%">姓名</th>
-              <th style="width: 15%">得分</th>
-              <th style="width: 10%">用时</th>
-              <th style="width: 30%">院系</th>
+              <th style="width: 10%">姓名</th>
+              <th style="width: 5%">得分</th>
+              <th style="width: 5%">用时</th>
+              <th style="width: 15%">院系</th>
+              <th style="width: 10%">考试时间</th>
+              <th style="width: 8%">家庭困难</th>
+              <th style="width: 8%">受资助</th>
+              <th style="width: 8%">贷款</th>
               <th style="width: 9%">操作</th>
             </tr>
           </thead>
@@ -62,6 +82,10 @@
               <td >{$vo.score}</td>
               <td >{$vo.use_time}</td>
               <td >{$vo.college_name}</td>
+              <td >{$vo.exam_time|date="m-d H:i",###}</td>
+              <td >{$vo.family_difficulties}</td>
+              <td >{$vo.support}</td>
+              <td >{$vo.loan}</td>
               <td >
 
                 <div class="dropdown">
@@ -71,11 +95,7 @@
                   </button>
                   <ul class="dropdown-menu" role="menu"
                     aria-labelledby="dropdownMenu1" style="min-width: 80px;">
-                    <li role="presentation"><a class="btn" role="menuitem" tabindex="-1" 
-                      href="{:U("admin/exams/pause?exam_id=$vo[id]")}">操作</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1"
-                      href="{:U("admin/exams/edit?exam_id=$vo[id]")}">编辑</a></li>
-                      <li><a class="btn" data-toggle="modal" data-target="#del_exam" onclick="del({$vo.id})">删除</a></li>
+                      <li><a class="btn" data-toggle="modal" data-target="#del_exam" onclick="del({$vo.id},{$vo.exam_id})">删除</a></li>
                   </ul>
                 </div></td>
             </tr>
@@ -94,11 +114,11 @@
 </div>
 <script>
   //设置为只能输入数据，防止输入非法字符
-	function onlyNum() {
+	    function onlyNum() {
         if(!(event.keyCode==46)&&!(event.keyCode==8)&&!(event.keyCode==37)&&!(event.keyCode==39))
         if(!((event.keyCode>=48&&event.keyCode<=57)||(event.keyCode>=96&&event.keyCode<=105)))
         event.returnValue=false;
-  }
+      }
     //提示导出的个数
       $("#btn_scores_export").click(function(){
          if($("#number").val()==""){
@@ -118,5 +138,22 @@
         }
         return false;
       });
+      function del(id,exam_id){
+        if(confirm("是否删除,删除后不可恢复")){
+          var url = "{:U('admin/scores/del','','')}";
+          jQuery.post(url,{"id" :id,"exam_id":exam_id},
+                function(msg) {
+                  if (msg.info == 'ok') {
+                    $("#tr"+id).remove();//在表格中移除被删除的数据
+                    $("#total").text("共"+{$total-1}+"条记录");
+                    alert(msg.msg);
+                  } else {
+                    alert(msg.msg);
+                  }
+                }, 'json').error(function() {
+                  alert("网络连接错误，请稍后再试");
+            });
+        }
+      }
 </script>
 <include file="public/footer"/>

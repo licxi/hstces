@@ -8,8 +8,8 @@ class ScoresModel extends RelationModel {
 							"mapping_type"	=> self::BELONGS_TO,
 							"class_name" 	=> "Users",
 							"foreign_key"	=> "student_id",
-							"mapping_fields"=> "user_name,college_id",
-							"as_fields"		=> "user_name,college_id"
+							"mapping_fields"=> "user_name,family_difficulties,support,loan,college_id",
+							"as_fields"		=> "user_name,family_difficulties,support,loan,college_id"
 					),
 			"Colleges"=>array(
 					"mapping_type"	=> self::BELONGS_TO,

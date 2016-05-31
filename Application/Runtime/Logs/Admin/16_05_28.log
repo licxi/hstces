@@ -1,0 +1,7 @@
+[ 2016-05-28T15:38:52+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001237s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0387s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = '30c8586794579fc0ea93c5b8561460b2' LIMIT 1   [ RunTime:0.0003s ]
+

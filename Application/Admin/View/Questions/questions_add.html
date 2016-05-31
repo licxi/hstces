@@ -3,49 +3,38 @@
   <h2><if condition="$questions_info">编辑<else/>添加</if>题目</h2><hr>
   <div align="center">
   	 <div class="input-group">
-				<form id="addform" action="{:U('Admin/questions/save')}"
-					method="post" enctype="multipart/form-data">
-					<input name="exam_id" type="hidden" value="{$exam_id}" />
+				<form id="addform" action="{:U('Admin/questions/save','','')}"
+					method="post" onSubmit="return check_question_form()">
+					<input name="exam_id" type="hidden" value="{$questions_info[exam_id]}" />
 					<input name="id" type="hidden" value="{$questions_info.id}" />
 					<div class="control-group">
 						<label>题目：(<font color="red">必填，至少4个最多100个汉字</font>)
 						</label>
-						<textarea class="form-control" name="question" {empty name="questions_info"
-							}ajaxurl="{:U("admin/goods/check_question")}"{/empty} datatype="*4-50"
-							nullmsg="请填写产品！" errormsg="不能少于4个字符大于50个汉字">{$questions_info.question} </textarea>
-						<span class="Validform_checktip"></span>
+						<textarea class="form-control" id="question" name="question" datatype="*4-50" >{$questions_info.question}</textarea>
 					</div>
 
 					<div class="control-group">
 						<label>选项一：(<font color="red">必填</font>)
-						</label> <input type="text" name="answer1" class="form-control"
-							value="{$questions_info.answer1}" datatype="*1-50"
-							nullmsg="请填写内容！" errormsg="不能少于1个字符大于250个字符" /> <span
-							class="Validform_checktip"></span>
+						</label> <input type="text" id="answer1" name="answer1" class="form-control"
+							value="{$questions_info.answer1}" datatype="*1-50"/> 
 					</div>
 
 					<div class="control-group">
 						<label>选项二：(<font color="red">必填</font>)
-						</label> <input type="text" name="answer2" class="form-control"
-							value="{$questions_info.answer2}" datatype="*1-50" 
-							nullmsg="请填写内容！" errormsg="不能少于1个字符大于250个字符" /> <span
-							class="Validform_checktip"></span>
+						</label> <input type="text" id="answer2" name="answer2" class="form-control"
+							value="{$questions_info.answer2}" datatype="*1-50" /> 
 					</div>
 
 					<div class="control-group">
 						<label>选项三：(<font color="red">必填</font>)
-						</label> <input type="text" name="answer3" class="form-control"
-							value="{$questions_info.answer3}" datatype="*1-50"
-							nullmsg="请填写内容！" errormsg="不能少于1个字符大于250个字符" /> <span
-							class="Validform_checktip"></span>
+						</label> <input type="text" id="answer3" name="answer3" class="form-control"
+							value="{$questions_info.answer3}" datatype="*1-50" /> 
 					</div>
 
 					<div class="control-group">
 						<label>选项四：(<font color="red">必填</font>)
-						</label> <input type="text" name="answer4" class="form-control"
-							value="{$questions_info.answer4}" datatype="*1-50"
-							nullmsg="请填写内容！" errormsg="不能少于1个字符大于250个字符" /> <span
-							class="Validform_checktip"></span>
+						</label> <input type="text" id="answer4" name="answer4" class="form-control"
+							value="{$questions_info.answer4}" datatype="*1-50" />
 					</div>
 
 					<div class="control-group">
@@ -81,7 +70,6 @@
 						</select>
 					</div>
 					<div class="control-group" style="padding-top: 5PX;text-align: center;">
-						<img style="display: none;" src="images/loading.gif" />
 						<input type="button" class="btn btn-primary Sub" onclick="back()" value="取消" />
 						<input type="submit" class="btn btn-primary Sub" value="保存" />
 							
@@ -92,7 +80,36 @@
 </div>
 <script type="text/javascript">
 	function back() {
-		window.location.href = "{:U('admin/questions/index')}";
+		window.location.href = "{:U("admin/questions/index?exam_id=$questions_info[exam_id]","","")}";
+	}
+	function check_question_form(){
+		var question = $("#question");
+		var answer1 = $("#answer1");
+		var answer2 = $("#answer2");
+		var answer3 = $("#answer3");
+		var answer4 = $("#answer4");
+		if (question.val() == "") {
+			alert("题目不能为空！");
+			question.focus();
+			return false;
+		} if(answer1.val() == ""){
+			alert("选项一不能为空！");
+			answer1.focus();
+			return false;
+		} if(answer2.val() == ""){
+			alert("选项二不能为空！");
+			answer2.focus();
+			return false;
+		} if(answer3.val() == ""){
+			alert("选项三不能为空！");
+			answer3.focus();
+			return false;
+		} if(answer4.val() == ""){
+			alert("选项四不能为空！");
+			answer4.focus();
+			return false;
+		} 
+		return true;
 	}
 </script>
 <include file="Public/footer" />

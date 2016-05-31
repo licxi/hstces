@@ -1,0 +1,7 @@
+[ 2016-05-30T22:04:47+08:00 ] ::1 /hstcesys/home/login/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002050s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013181116' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0005s ]
+

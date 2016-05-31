@@ -1,0 +1,78 @@
+[ 2016-05-26T21:59:41+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003553s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = '2013118120' AND `admin_password` = '30c8586794579fc0ea93c5b8561460b2' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-26T21:59:45+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002071s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = '30c8586794579fc0ea93c5b8561460b2' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-26T22:04:22+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001854s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0046s ]
+SQL: INSERT INTO `questions` (`question`,`answer1`,`answer2`,`answer3`,`answer4`,`rightAnswer`,`exam_id`) VALUES ('第二次测试','a','b','c','d','d','39'),('第二次测试','a','b','c','d','d','39'),('第二次测试','a','b','c','d','d','39'),('第二次测试','a','b','c','d','d','39'),('第二次测试','a','b','c','d','d','39'),('第二次测试','a','b','c','d','d','39'),('第二次测试','a','b','c','d','d','39'),('第二次测试','a','b','c','d','d','39') [ RunTime:0.0889s ]
+
+[ 2016-05-26T22:22:16+08:00 ] ::1 /hstcesys/admin/questions/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005264s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+SQL: SHOW COLUMNS FROM `questions` [ RunTime:0.0083s ]
+SQL: INSERT INTO `questions` (`question`,`answer1`,`answer2`,`answer3`,`answer4`,`rightAnswer`,`exam_id`) VALUES ('第二次测试','a','b','c','d','d','39'),('第二次测试','a','b','c','d','d','39'),('第二次测试','a','b','c','d','d','39'),('第二次测试','a','b','c','d','d','39'),('第二次测试','a','b','c','d','d','39'),('第二次测试','a','b','c','d','d','39'),('第二次测试','a','b','c','d','d','39'),('第二次测试','a','b','c','d','d','39') [ RunTime:0.0532s ]
+
+[ 2016-05-26T22:44:11+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001537s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = '30c8586794579fc0ea93c5b8561460b2' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-26T22:46:50+08:00 ] ::1 /hstcesys/admin/scores/del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001598s ]
+SQL: SHOW COLUMNS FROM `scores` [ RunTime:0.0042s ]
+SQL: DELETE FROM `scores` WHERE `id` = 32 AND `exam_id` = 38 [ RunTime:0.1446s ]
+
+[ 2016-05-26T22:48:13+08:00 ] ::1 /hstcesys/admin/admin/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004426s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\PHP\Workspace\hstcesys\ThinkPHP\Library\Think\Upload.class.php 第 204 行.
+
+[ 2016-05-26T22:49:08+08:00 ] ::1 /hstcesys/admin/admin/addAdmin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003043s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0119s ]
+SQL: INSERT INTO `admin` (`admin_name`,`nickname`,`admin_password`) VALUES ('巫林杰','wulinjie','e10adc3949ba59abbe56e057f20f883e') [ RunTime:0.0627s ]
+
+[ 2016-05-26T22:49:24+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001497s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = '巫林杰' AND `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-26T23:47:05+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002714s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = '30c8586794579fc0ea93c5b8561460b2' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-05-26T23:51:22+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001897s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = '30c8586794579fc0ea93c5b8561460b2' LIMIT 1   [ RunTime:0.0003s ]
+

@@ -221,4 +221,31 @@ class AdminController extends AuthController{
 		}
 		$this->ajaxReturn($result);
 	}
+	
+	public function background(){
+		$this->display('modify_bg_img');
+	}
+	
+	public function upload(){
+		$upload = new \Think\Upload (); // 实例化上传类
+		$upload->maxSize = 0; // 设置附件上传大小,不限大小
+		$upload->savePath = '../public/Images/'; // 设置附件上传目录 */
+		/* $upload->savePath = './file/'; // 设置附件上传目录 */
+		$upload->saveName = "BG";
+		$upload->saveExt = "png";
+		$upload->replace = true;
+		$upload->autoSub = false;
+		// 上传文件
+		$info = $upload->uploadOne ( $_FILES ['bg_img'] );
+		if (! $info) { // 上传错误提示错误信息
+			echo ($upload->getError ());
+		} else { // 上传成功
+			$data = array(
+					"info"	=> "ok",
+					"msg"	=> "上传成功！"
+			);
+			$this->ajaxReturn($data);
+		}
+		
+	}
 }

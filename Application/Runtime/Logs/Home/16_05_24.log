@@ -1,0 +1,86 @@
+[ 2016-05-24T16:38:11+08:00 ] ::1 /hstcesys/Home/home/score
+ERR: 无法加载控制器:Home
+
+[ 2016-05-24T16:38:20+08:00 ] ::1 /hstcesys/Home/home/score
+ERR: 无法加载控制器:Home
+
+[ 2016-05-24T17:06:05+08:00 ] ::1 /hstcesys/home/login/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001234s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013118120' AND `password` = '30c8586794579fc0ea93c5b8561460b2' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-05-24T17:37:51+08:00 ] ::1 /hstcesys/home/login/validate.jsp
+ERR: 非法操作:validate.jsp
+
+[ 2016-05-24T17:41:58+08:00 ] ::1 /hstcesys/home/login/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = 'admin' AND `password` = '30c8586794579fc0ea93c5b8561460b2' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-24T17:43:03+08:00 ] ::1 /hstcesys/home/login/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013118120' AND `password` = '30c8586794579fc0ea93c5b8561460b2' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-24T17:48:05+08:00 ] ::1 /hstcesys/home/login/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013118120' AND `password` = '30c8586794579fc0ea93c5b8561460b2' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-05-24T17:55:52+08:00 ] ::1 /hstcesys/home/login/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013118120' AND `password` = '30c8586794579fc0ea93c5b8561460b2' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-05-24T18:00:50+08:00 ] ::1 /hstcesys/Home/home/score
+ERR: 无法加载控制器:Home
+
+[ 2016-05-24T18:01:16+08:00 ] ::1 /hstcesys/home/score/score
+ERR: 无法加载控制器:Score
+
+[ 2016-05-24T18:01:43+08:00 ] ::1 /hstcesys/home/score/score
+ERR: 无法加载控制器:Score
+
+[ 2016-05-24T18:01:47+08:00 ] ::1 /hstcesys/home/score/score
+ERR: 无法加载控制器:Score
+
+[ 2016-05-24T18:02:18+08:00 ] ::1 /hstcesys/home/score/index
+ERR: 无法加载控制器:Score
+
+[ 2016-05-24T18:03:55+08:00 ] ::1 /hstcesys/home/score/score
+ERR: 非法操作:score
+
+[ 2016-05-24T18:05:42+08:00 ] ::1 /hstcesys/home/score/score/exam_id/29
+ERR: 非法操作:score
+
+[ 2016-05-24T19:35:20+08:00 ] ::1 /hstcesys/home/login/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013181116' AND `password` = '30c8586794579fc0ea93c5b8561460b2' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-24T19:35:24+08:00 ] ::1 /hstcesys/home/login/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013181116' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-05-24T19:42:33+08:00 ] ::1 /hstcesys/home/user/modify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001241s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0103s ]
+SQL: UPDATE `users` SET `user_name`='杨晶晶',`phone`='18098108580' WHERE `student_id` = '2013181116' [ RunTime:0.3717s ]
+

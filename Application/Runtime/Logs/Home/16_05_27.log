@@ -1,0 +1,70 @@
+[ 2016-05-27T11:53:45+08:00 ] ::1 /hstcesys/home/login/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0279s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013181116' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2016-05-27T12:09:27+08:00 ] ::1 /hstcesys/home/login/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001012s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013181116' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-05-27T16:03:18+08:00 ] ::1 /hstcesys/home/login/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001935s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013118120' AND `password` = '30c8586794579fc0ea93c5b8561460b2' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-27T16:10:50+08:00 ] ::1 /hstcesys/home/login/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013118120' AND `password` = '30c8586794579fc0ea93c5b8561460b2' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2016-05-27T16:40:43+08:00 ] ::1 /hstcesys/home/user/checkStudentId.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001228s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013118101' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-05-27T16:42:12+08:00 ] ::1 /hstcesys/home/login/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001734s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013118101' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-27T16:43:18+08:00 ] ::1 /hstcesys/home/login/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001555s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013118101' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-05-27T16:45:43+08:00 ] ::1 /hstcesys/home/login/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013118101' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-05-27T20:03:29+08:00 ] ::1 /hstcesys/home/login/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001599s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013118120' AND `password` = '30c8586794579fc0ea93c5b8561460b2' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-27T20:19:01+08:00 ] ::1 /hstcesys/home/login/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002396s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `users` WHERE `student_id` = '2013118120' AND `password` = '30c8586794579fc0ea93c5b8561460b2' LIMIT 1   [ RunTime:0.0003s ]
+

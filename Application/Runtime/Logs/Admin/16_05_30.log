@@ -1,0 +1,28 @@
+[ 2016-05-30T17:47:21+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002354s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0494s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = '30c8586794579fc0ea93c5b8561460b2' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2016-05-30T22:07:05+08:00 ] ::1 /hstcesys/admin/scores/del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002769s ]
+SQL: SHOW COLUMNS FROM `scores` [ RunTime:0.0068s ]
+SQL: DELETE FROM `scores` WHERE `id` = 38 AND `exam_id` = 45 [ RunTime:0.0694s ]
+
+[ 2016-05-30T22:12:39+08:00 ] ::1 /hstcesys/admin/scores/del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003798s ]
+SQL: SHOW COLUMNS FROM `scores` [ RunTime:0.0079s ]
+SQL: DELETE FROM `scores` WHERE `id` = 39 AND `exam_id` = 45 [ RunTime:0.0611s ]
+
+[ 2016-05-30T22:14:06+08:00 ] ::1 /hstcesys/admin/scores/del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004992s ]
+SQL: SHOW COLUMNS FROM `scores` [ RunTime:0.0065s ]
+SQL: DELETE FROM `scores` WHERE `id` = 40 AND `exam_id` = 45 [ RunTime:0.0614s ]
+

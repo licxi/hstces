@@ -1,0 +1,14 @@
+[ 2016-05-25T12:15:46+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002725s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0457s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = '2013118120' AND `admin_password` = '30c8586794579fc0ea93c5b8561460b2' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-25T12:15:49+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002742s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = '30c8586794579fc0ea93c5b8561460b2' LIMIT 1   [ RunTime:0.0003s ]
+

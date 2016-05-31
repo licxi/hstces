@@ -1,0 +1,89 @@
+<include file="Public/header" />
+<div class="my_table">
+  <h2>文件列表<span style="padding-left: 40%">{$title}</span></h2><hr>
+  <div class="search">
+        <form id="searchForm" name="searchform" class="well form-search"
+          action="" method="GET" onSubmit="check();">
+          <div class="row">
+            <div class="col-sm-6 col-lg-6">
+              <div class="input-group input-group-sm">
+                  <span class="input-group-addon" id="sizing-addon1">文件名</span>
+                  <input type="text" name="key" value="{$key}"class="form-control" placeholder="支持模糊查询" aria-describedby="sizing-addon1">
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-6">
+              <input type="submit" class="btn btn-info" value="搜索"
+              onclick="checkaction(1);" /> 
+              <a class="btn btn-info navbar-right" href="{:U('admin/file/fileUpload','','')}">上传文件</a>
+            </div>
+          </div>
+        </form>
+    </div>
+      <if condition="$files_list">
+      <div class="dataBox">
+      <div class="table-responsive">
+        <table class="table table-hover table-bordered table-striped center">
+          <thead>
+            <tr>
+              <th style="width: 5%;text-align: center;">编号</th>
+              <th style="width: 30%">文件名</th>
+              <th style="width: 30%">文件描述</th>
+              <th style="width: 8%">类型</th>
+              <th style="width: 7%">大小</th>
+              <th style="width: 20%">操作</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <foreach name="files_list" item="vo">
+            <tr id="tr{$vo.file_id}">
+              <td >{$vo.file_id}</td>
+              <td >{$vo.file_name}</td>
+              <td >{$vo.file_describe}</td>
+              <td >{$vo.file_ext}</td>
+              <td >{$vo.file_size|size}</td>
+              <td >
+                <a class="btn btn-default" href="{:U("admin/file/modify?file_id=$vo[file_id]",'','')}">编辑文件描述</a>
+                <a class="btn btn-default" href="{:U("/admin/file/download?file_id=$vo[file_id]",'','')}">下载</a>
+                <button id="del" class="btn btn-danger" onclick="del_file({$vo.file_id},'{$vo.file_name}')">删除</button>
+              </td>
+            </tr>
+            </foreach>
+
+          </tbody>
+        </table>
+        </div>
+      </div>
+      <else />
+      <tr>
+        <td colspan="13">暂无相关文件</td>
+      </tr>
+      </if>
+      
+      <if condition="$page">
+		<div style="text-align: right;"> <span id="total">共{$total}条记录</span></div>
+		<div style="text-align: center;">
+   			{$page}
+		</div>
+</if>
+</div>
+<script type="text/javascript">
+	function del_file(file_id,file_name){
+		if(confirm('是否删除   '+file_name+"  删除后不可恢复!")){
+			 var url = "{:U('admin/file/del')}";
+		      jQuery.post(url,{"file_id" : file_id},
+		            function(msg) {
+		              if (msg.info == 'ok') {
+		                $("#tr"+file_id).remove();//在表格中移除被删除的数据
+		                $("#total").text("共"+{$total-1}+"条记录");
+		                alert(msg.msg);
+		              } else {
+		                alert(msg.msg);
+		              }
+		            }, 'json').error(function() {
+		              alert("网络连接错误，请稍后再试");
+		        });
+		}
+	}
+</script>
+<include file="Public/footer" />

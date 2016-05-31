@@ -1,4 +1,4 @@
-<include file="Public/header" title="导入产品" />
+<include file="Public/header"/>
 <!-- 主容器 start -->
 <link href="CSS/fileinput.css" media="all" rel="stylesheet" type="text/css" />
 <script src="JS/fileinput.js" type="text/javascript"></script>
@@ -6,7 +6,7 @@
 <div class="my_table">
 			<!-- 标题 start -->
 			<div>
-				<h2>导入题目 <a class="btn btn-info navbar-right" href="{:U('admin/questions/index')}">返回题目列表</a></h2><hr>
+				<h2>导入题目 <a class="btn btn-info navbar-right" href="{:U("admin/questions/index?exam_id=$exam_id","","")}">返回题目列表</a></h2><hr>
 				<!-- 标题 end -->
 				
 			</div>
@@ -19,13 +19,13 @@
 				<form enctype="multipart/form-data">
 	               <hr style="border: 2px dotted">
 	               <label>上传excel表格，支持xls和xlsx格式<font color="red">(内容务必要符合表格格式!!!)</font></label>
-	               <input id="excelData" name="excelData" type="file" multiple style="width: 100px">
+	               <input id="excelData" name="excelData" type="file" multiple style="width: 100px;height: 150px;">
             	</form>
 			</div>
 <script type="text/javascript">
 	$('#excelData').fileinput({
         language: 'zh',
-        uploadUrl: "{:U("admin/questions/upload")}",/* 文件上传的的地址 */
+        uploadUrl: "{:U("admin/questions/upload?exam_id=$exam_id","","")}",/* 文件上传的的地址 */
         maxFileCount: 1,/* 设置上传的文件的数量 */
         allowedFileExtensions : ['xlsx', 'xls'],/* 允许上传的文件格式 */
     });

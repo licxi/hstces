@@ -20,8 +20,23 @@
 </div>
 
 
+
 <div class="my_table">
   <h2>考试列表</h2><hr>
+     <form id="searchForm" name="searchform" class="well form-search"
+          action="{:U("admin/exams/getexams","","")}" method="GET">
+          <div class="row">
+            <div class="col-sm-6 col-lg-6">
+              <div class="input-group input-group-sm">
+                  <span class="input-group-addon" id="sizing-addon1">考试标题</span>
+                  <input type="text" name="key" value="{$key}"class="form-control" placeholder="支持模糊查询" aria-describedby="sizing-addon1">
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-6">
+              <input type="submit" class="btn btn-info" value="搜索" /> 
+            </div>
+          </div>
+        </form>
       <if condition="$exams_list">
       <div class="table-responsive">
         <table class="table table-hover table-bordered table-striped center">
@@ -42,12 +57,12 @@
             <foreach name="exams_list" item="vo">
             <tr id="tr{$vo.exam_id}">
               <td >{$vo.exam_id}</td>
-              <td ><a href="{:U("admin/questions/index?exam_id=$vo[exam_id]&title=$vo[title]",'','')}">{$vo.title}</a></td>
+              <td ><a href="{:U("admin/questions/index?exam_id=$vo[exam_id]",'','')}">{$vo.title}</a></td>
               <td >{$vo.start_time}</td>
               <td >{$vo.end_time}</td>
               <td ><span id="span{$vo.exam_id}">{$vo.status}</span></td>
               <td >{$vo.author}</td>
-              <td >{$vo.total_number}</td>
+              <td ><a href="{:U("admin/scores/getScores?exam_id=$vo[exam_id]","","")}">{$vo.total_number}</a></td>
               <td >
 
                 <div class="dropdown">
@@ -60,7 +75,7 @@
                     <li role="presentation"><a class="btn" role="menuitem" tabindex="-1" onclick="change_exam_status({$vo.exam_id})" 
                       id="a{$vo.exam_id}"><if condition="$vo[status] eq '进行中'">终止<else />开始</if></a></li>
                     <li role="presentation"><a role="menuitem" tabindex="-1"
-                      href="{:U("admin/scores/getScores?exam_id=$vo[exam_id]&title=$vo[title]",'','')}">成绩</a></li>
+                      href="{:U("admin/scores/getScores?exam_id=$vo[exam_id]",'','')}">成绩</a></li>
                     <li role="presentation"><a role="menuitem" tabindex="-1"
                       href="{:U("admin/exams/edit?exam_id=$vo[exam_id]",'','')}">编辑</a></li>
                     <li><a class="btn" onClick="del({$vo.exam_id})">删除</a></li>
@@ -109,6 +124,16 @@
             }, 'json').error(function() {
               alert("网络连接错误，请稍后再试");
         });
+  }
+  function checkaction(v) {
+    if (v == 0) {
+      document.searchform.action = "{:U('admin/questions/export','','')}";
+    } else {
+      document.searchform.action = "{:U('admin/questions/index?exam_id='.$exam_id,'','')}";
+    } if(v == 2){
+      document.searchform.action = "{:U('admin/questions/import','','')}";
+    }
+    searchform.submit();
   }
 </script>
 <include file="public/footer"/>

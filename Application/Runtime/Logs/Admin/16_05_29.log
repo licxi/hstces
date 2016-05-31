@@ -1,0 +1,39 @@
+[ 2016-05-29T10:46:31+08:00 ] ::1 /hstcesys/admin/login/check.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001890s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'admin' AND `admin_password` = '30c8586794579fc0ea93c5b8561460b2' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-29T10:46:40+08:00 ] ::1 /hstcesys/admin/file/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002561s ]
+SQL: SHOW COLUMNS FROM `files` [ RunTime:0.0052s ]
+SQL: SELECT `file_save_name` FROM `files` WHERE `file_id` = 7 LIMIT 1   [ RunTime:0.0004s ]
+SQL: DELETE FROM `files` WHERE `file_id` = 7 [ RunTime:0.0749s ]
+
+[ 2016-05-29T10:46:42+08:00 ] ::1 /hstcesys/admin/file/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003776s ]
+SQL: SHOW COLUMNS FROM `files` [ RunTime:0.0069s ]
+SQL: SELECT `file_save_name` FROM `files` WHERE `file_id` = 6 LIMIT 1   [ RunTime:0.0005s ]
+SQL: DELETE FROM `files` WHERE `file_id` = 6 [ RunTime:0.0581s ]
+
+[ 2016-05-29T10:46:45+08:00 ] ::1 /hstcesys/admin/file/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002687s ]
+SQL: SHOW COLUMNS FROM `files` [ RunTime:0.0053s ]
+SQL: SELECT `file_save_name` FROM `files` WHERE `file_id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: DELETE FROM `files` WHERE `file_id` = 5 [ RunTime:0.0460s ]
+
+[ 2016-05-29T10:46:49+08:00 ] ::1 /hstcesys/admin/file/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004607s ]
+SQL: SHOW COLUMNS FROM `files` [ RunTime:0.0050s ]
+SQL: SELECT `file_save_name` FROM `files` WHERE `file_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: DELETE FROM `files` WHERE `file_id` = 1 [ RunTime:0.0480s ]
+

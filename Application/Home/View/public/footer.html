@@ -1,0 +1,53 @@
+<script type="text/javascript">
+    function check_password() {
+        var old_password = $("#old_password").val();
+        var new_password = $("#new_password").val();
+        if(old_password == ""){
+          alert("旧密码未填写");
+          $("#old_password").focus();
+          return;
+        } if(new_password == ""){
+          alert("新密码未填写");
+          $("#new_password").focus();
+          return;
+        } if(new_password.length>16 || new_password.length<6){
+          alert("密码必须大于6位或小于16位");
+          $("#new_password").focus();
+          return;
+        }
+        /*检查旧密码是否正确，使用ajax无刷新检查,*/
+        var url = "{:U('home/user/checkPassword','','')}"
+        jQuery.post(url, {
+            old_password : old_password,
+          }, function(msg) {
+            if (msg.info == 'ok') {
+              var modify_url = "{:U('home/user/modifyPassword','','')}"
+              jQuery.post(modify_url, {
+                    new_password : new_password,
+                    }, function(msg) {
+                    if (msg.info == 'ok') {
+                        alert(msg.msg);
+                        $("#modify_password").modal("hide");
+                    } else {
+                        alert(msg.msg);
+                    }
+                    }, 'json').error(function() {
+                        alert("网络连接错误，请稍后再试");
+              });
+            } else {
+              alert(msg.msg);
+              $("#old_password").focus();
+            }
+          }, 'json').error(function() {
+            alert("网络连接错误，请稍后再试");
+          });
+    }
+</script>
+<nav class="navbar navbar-default navbar-static-bottom" style="background-color: white;border: 0;padding-top: 100px">
+  <div class="container" style="text-align: center;bottom: 100px;">
+    2016 Hanshan Normal University. All RIGHTS
+	RESERVED. [版权所有] 韩山师范学院
+  </div>
+</nav>
+</body>
+</html>

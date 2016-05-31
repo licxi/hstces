@@ -19,25 +19,26 @@
 	               <input id="material" name="material" type="file" multiple style="width: 100px">
 	               <hr style="border: 2px dotted">
             	</form>
-            	<form>
+            	<!-- <form>
             		<span>资料的描述：</span><br/>
             		<input class="form-control" id="file_describe" name="file_describe" placeholder="填写上传资料的描述信息"></input><br/>
             		<button class="btn">确认</button>
-            	</form>
+            	</form> -->
 			</div>
 <script type="text/javascript">
 	$('#material').fileinput({
         language: 'zh',
-        uploadUrl: "{:U("admin/file/upload")}",/* 文件上传的的地址 */
-        maxFileCount: 1,/* 设置上传的文件的数量 */
+        uploadUrl: "{:U("admin/file/upload","","")}",/* 文件上传的的地址 */
+        maxFileCount: 5,/* 设置上传的文件的数量 */
         maxFileSize:104857600
     });
     $("#material").on("fileuploaded", function (event, data, previewId, index) {
-    	if(data.response.info == "ok"){
-    			if(confirm("上传成功！是否填写资料描述")){
-    				$("#file_describe").focus();
-    			}
-    	}else{
+    	var length = data.files.length;//上传文件的数量
+    	if(data.response.info == "ok"  && (index+1)==length){ //当全部文件上传成功后提示
+    		if(confirm("上传成功！是否填写返回文件列表")){
+				window.location.href="{:U("admin/file/index","","")}";
+			}
+    	}else if(data.response.info == "error"){
     		alert("上传失败！请重试");
     	}
     });

@@ -1,0 +1,54 @@
+<include file="public/header"/>
+
+<div class="container">
+<h2>考试</h2><hr>
+	<div class="col-lg-12 col-md-12 col-sm-12">
+    <if condition="$exams_list">
+				 <div class="table-responsive"> 
+        <table class="table table-hover table-bordered table-striped center">
+          <thead>
+            <tr>
+              <th style="width: 10%">编号</th>
+              <th style="width: 30%">标题</th>
+              <th style="width: 15%">开始时间</th>
+              <th style="width: 15%">结束时间</th>
+              <th style="width: 9%">操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <foreach name="exams_list" item="vo">
+              <tr >
+                <td >{$vo.exam_id}</td>
+                <td >{$vo.title}</a></td>
+                <td >{$vo.start_time}</td>
+                <td >{$vo.end_time}</td>
+                <td >
+                	<!-- 根据用户有没有参与该次考试显示不同链接 -->
+                  <if condition="$vo.is_exam eq 0">
+                    <a class="btn btn-primary" href="{:U("home/score/index?exam_id=$vo[exam_id]",'','')}" target="_blank">查看成绩</a>
+                  <elseif condition="($vo.status eq 1) and ($vo.can_exam eq 1)"/> 
+                  <a class="btn btn-primary" href="{:U("home/exam/startexam?exam_id=$vo[exam_id]",'','')}">开始考试</a>
+                  <elseif condition="$vo.status eq 0"/> <span>考试已终止</span>
+                  <elseif condition="$vo.can_exam eq 0"/>考试时间未到
+                  <elseif condition="$vo.can_exam eq 2"/>考试时间已过
+                  </if>
+          
+                <!-- 	<a class="btn btn-primary" href="reviewExam.html">查看成绩</a> --><!-- 参加考试了 -->
+                </td>
+             </tr>
+            </foreach>
+          </tbody>
+        </table>
+        </div>
+	</div>
+  <else />
+        <span>暂无相关信息</span>
+      </if>
+      <if condition="$page">
+        <div style="text-align: right;"> <span id="total">共{$total}条记录</span></div>
+        <div style="text-align: center;">{$page}
+        </div>
+</if>
+</div>
+
+<include file="public/footer"/>

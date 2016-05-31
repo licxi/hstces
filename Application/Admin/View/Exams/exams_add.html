@@ -1,24 +1,33 @@
 <include file="Public/header" title="添加考试"/>
+<style type="text/css">
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+.form-signin {
+    max-width: 330px;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+</style>
 <div class="my_table">
-	<h2><if condition="$exam_info">编辑<else />添加</if>考试<a class="btn btn-info navbar-right" href="{:U('Admin/exams/index')}">返回考试列表</a></h2><hr>
+	<h2><if condition="$exam_info">编辑<else />添加</if>考试<a class="btn btn-info" style="float: right;"href="{:U('Admin/exams/index','','')}">返回考试列表</a></h2><hr>
     <!-- 标题 end -->
     <!-- 内容区块 start -->
-    <div class="row">
-    	<form method="post" action="{:U("admin/exams/save",'','')}" onSubmit="return check_form()">
-    	<input name="exam_id" value="{$exam_info}" type="hidden"></input>
-
-        <div class="input-group  input-group-sm col-md-4 col-md-offset-4">
+    <div>
+        <form method="post" action="{:U("admin/exams/save",'','')}" onSubmit="return check_form()" class="form-signin">
+            <input name="exam_id" value="{$exam_info[exam_id]}" type="hidden"></input>
             <div class="input-group " id="id">
             <span class="input-group-addon" id="sizing-addon1">
-            	<span class="glyphicon glyphicon-align-center " aria-hidden="true">	
-            	</span>
+                <span class="glyphicon glyphicon-align-center " aria-hidden="true"> 
+                </span>
             </span>
             <input id ="title" name="title" class="form-control" placeholder="填写考试标题" type="text" value="{$exam_info[title]}" />
-            </div>
         </div><br/>
 
 
-        <div class="input-group  input-group-sm col-md-4 col-md-offset-4">
             <div class="input-group date" id="start_time">
             <span class="input-group-addon" id="sizing-addon1">
                     <span class="glyphicon glyphicon-calendar " aria-hidden="true">
@@ -26,10 +35,8 @@
                 </span>
                 <input id="in_start_time" name="start_time" value="{$exam_info[start_time]}" 
                 class="form-control" placeholder="←点击日历图标选择考试开始时间" type="text"/>
-            </div>
         </div><br/>
 
-        <div class="input-group input-group-sm col-md-4 col-md-offset-4">
             <div class="input-group date" id="end_time">
             <span class="input-group-addon" id="sizing-addon1">
                     <span class="glyphicon glyphicon-calendar " aria-hidden="true">
@@ -38,14 +45,12 @@
              <input id="in_end_time" name="end_time" value="{$exam_info[end_time]}" 
              class="form-control" placeholder="←点击日历图标选择考试结束时间" type="text"/>
                 
-            </div>
         </div><br/>
         
-        <div class="input-group input-group-sm col-md-4 col-md-offset-4">
-            <img src="images/loading.gif" style="display: none;"/>
-            <input class="btn btn-primary Sub" type="submit" value="保存"/>
+        <div>
+            <input class="btn btn-primary Sub form-control " type="submit" value="保存" />
         </div>
-    </form>
+        </form>
     </div>
 <!-- 主内容 end -->
 
@@ -53,15 +58,15 @@
 	
     function check_form(){
 
-    	if($("#title").value == ""){
+    	if($("#title").val() == ""){
     		alert("请填写标题");
     		$("#title").focus();
     		return false;
-    	} if ($("#in_start_time").value == "") {
+    	} if ($("#in_start_time").val() == "") {
     		alert("请填写考试开始时间");
     		$("#in_start_time").focus();
     		return false;
-    	} if ($("#in_end_time").value == "") {
+    	} if ($("#in_end_time").val() == "") {
     		alert("请填写考试结束时间");
     		$("#in_end_time").focus();
     		return false;

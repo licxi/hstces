@@ -4,7 +4,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>考试管理系统</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+<link rel="shortcut icon" href="/hstcesys/Public/Images/favicon.ico" type="image/x-icon" />
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=9" /> -->
+<title>高校资助政策知识竞赛后台管理</title>
 
 <!-- <script type="text/javascript" src="/hstcesys/Public/Js/jquery.js"></script>
 <link rel="stylesheet" type="text/css" href="/hstcesys/Public/Css/bootstrap.css">
@@ -25,6 +28,7 @@
 <script type="text/javascript" src="/hstcesys/Public/Js/moment-with-locales.js"></script>
 <!-- <script type="text/javascript" src="http://apps.bdimg.com/libs/moment/2.8.3/moment-with-locales.js"></script> -->
 <script type="text/javascript" src="/hstcesys/Public/Js/bootstrap-datetimepicker.js"></script>
+
 
 
 <!-- 设置表格内容居中显示 -->
@@ -51,57 +55,6 @@
 </style>
 </head>
 <body>
-  <!-- 当小屏幕时，不能正确显示， -->
-  <!-- <nav class="navbar navbar-default navbar-fixed-top">
-   <div class="navbar-header" style="padding-left: 50px;">
-      <a class="navbar-brand" href="<?php echo U("admin/index/index");?>"><strong>考试管理系统</strong></a>
-   </div>
-   <div>
-
-      <ul class="nav navbar-nav">
-         <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-hover="dropdown" data-delay="100">
-               题目管理 <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-               <li><a href="<?php echo U("questions/index");?>">题目列表</a></li>
-               <li><a href="<?php echo U("questions/export");?>">导出题目</a></li>
-               <li><a href="<?php echo U("questions/import");?>">导入题目</a></li>
-               
-            </ul>
-         </li>
-         <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-hover="dropdown" data-delay="100">
-               考试管理<b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-               <li><a href="<?php echo U("admin/exams/getexams");?>">考试列表</a></li>
-               <li><a href="<?php echo U("admin/exams/addexam");?>">添加考试</a></li>
-               <li><a href="#">成绩查看</a></li>
-               <li><a href="#">导出成绩</a></li>
-               
-            </ul>
-         </li>
-      </ul>
-
-      <ul class="nav navbar-nav navbar-right" style="padding-right: 50px;">
-        <li><a href="<?php echo U("admin/index/index");?>">后台首页</a></li>
-        <li><a href="<?php echo U("Home/Index/index");?>">网站首页</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-hover="dropdown" data-delay="100">
-               <?php echo (session('admin_name')); ?><b class="caret"></b>
-            </a>
-          <ul class="dropdown-menu">
-            <li><a href="#">资料管理</a></li>
-            <li><a class="btn" data-toggle="modal" data-target="#add_admin" style="text-align: left;">添加管理员</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="<?php echo U('Admin/logout/index');?>">退出</a></li>
-          </ul>
-        </li>
-      </ul>
-
-   </div>
-</nav> -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="navbar-header" style="padding-left: 40px;">
     <button class="navbar-toggle" data-target="#example-navbar-collapse" data-toggle="collapse" type="button">
@@ -115,56 +68,64 @@
       <span class="icon-bar">
       </span>
     </button>
-    <a class="navbar-brand" href="<?php echo U("admin/index/index");?>"><strong>考试管理系统</strong></a>
+    <a class="navbar-brand" href="/admin"><strong>竞赛后台管理</strong></a>
   </div>
   <div class="collapse navbar-collapse" id="example-navbar-collapse">
       <ul class="nav navbar-nav">
-       <li class="dropdown">
+      <!--  <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" data-delay="100">
              题目管理 <b class="caret"></b>
           </a>
           <ul class="dropdown-menu">
-             <li><a href="<?php echo U("questions/index");?>">题目列表</a></li>
-             <li><a href="<?php echo U("questions/export");?>">导出题目</a></li>
-             <li><a href="<?php echo U("questions/import");?>">导入题目</a></li>
+             <li><a href="<?php echo U("questions/index",'','');?>">题目列表</a></li>
+             <li><a href="<?php echo U("questions/export",'','');?>">导出题目</a></li>
+             <li><a href="<?php echo U("questions/import",'','');?>">导入题目</a></li>
              
           </ul>
-       </li>
+       </li> -->
        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" data-delay="100">
              考试管理<b class="caret"></b>
           </a>
           <ul class="dropdown-menu">
-             <li><a href="<?php echo U("admin/exams/getexams");?>">考试列表</a></li>
-             <li><a href="<?php echo U("admin/exams/addexam");?>">添加考试</a></li>
+             <li><a href="<?php echo U("admin/exams/getexams",'','');?>">考试列表</a></li>
+             <li><a href="<?php echo U("admin/exams/addexam",'','');?>">添加考试</a></li>
           </ul>
        </li>
-       <li><a href="<?php echo U("admin/file/index");?>">资料管理</a></li>
+       <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" data-delay="100">
+             资料管理<b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+             <li><a href="<?php echo U("admin/file/index","","");?>">资料列表</a></li>
+             <li><a href="<?php echo U("admin/file/fileupload","","");?>">资料上传</a></li>
+          </ul>
        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" data-delay="100">
              管理员管理<b class="caret"></b>
           </a>
           <ul class="dropdown-menu">
-             <li><a href="<?php echo U("admin/admin/getAdmins");?>">管理员列表</a></li>
+             <li><a href="<?php echo U("admin/admin/getadmins",'','');?>">管理员列表</a></li>
              <li><a class="btn" data-toggle="modal" data-target="#add_admin" style="text-align: left;">添加管理员</a></li>
           </ul>
        </li>
+       <li><a href="<?php echo U("admin/admin/background",'','');?>">登录背景</a></li>
     </ul>
 
 
     <ul class="nav navbar-nav navbar-right" style="padding-right: 50px;">
-      <li><a href="<?php echo U("Home/Index/index");?>">网站首页</a></li>
+      <li><a href="<?php echo U("Home/index/index",'','');?>">网站首页</a></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" data-delay="100">
              <span id="show_nickname"><?php echo (session('nickname')); ?></span><b class="caret"></b>
           </a>
         <ul class="dropdown-menu">
           <!-- <li><a class="btn" data-toggle="modal" data-target="#add_admin" data-toggle="dropdown" style="text-align: left;">修改资料</a></li> -->
-          <li><a class="btn" data-toggle="modal" data-target="#modify_password" data-toggle="dropdown" style="text-align: left;">修改密码</a></li>
+          <li><a class="btn" data-toggle="modal" data-target="#modify_password" data-toggle="dropdown" style="text-align: left;b">修改密码</a></li>
           <li><a class="btn" data-toggle="modal" data-target="#modify_info" data-toggle="dropdown" style="text-align: left;">修改资料</a></li>
          <!--  <li><a herf="<?php echo U('Admin/admin/modify');?>">修改密码</a></li> -->
           <li role="separator" class="divider"></li>
-          <li><a href="<?php echo U('Admin/logout/index');?>">退出</a></li>
+          <li><a href="<?php echo U('Admin/logout/index','','');?>">退出</a></li>
         </ul>
       </li>
     </ul>
@@ -250,21 +211,21 @@
               <span > 登录名
               </span>
             </span>
-            <input id ="add_admin_name" name="add_admin_name" class="form-control" placeholder="" type="text" autocomplete="off"/>
+            <input id ="add_admin_name" name="add_admin_name" class="form-control" placeholder="" type="text" value="" />
           </div><br/>
           <div class="input-group " id="id">
             <span class="input-group-addon" id="sizing-addon1">
               <span > 昵&nbsp;&nbsp;&nbsp;称&nbsp;
               </span>
             </span>
-            <input id ="add_nickname" name="add_nickname" class="form-control" placeholder="" type="text" autocomplete="off"/>
+            <input id ="add_nickname" name="add_nickname" class="form-control" placeholder="" type="text" value="" autocomplete="off"/>
           </div> <br/>
           <div class="input-group " id="id">
             <span class="input-group-addon" id="sizing-addon1">
               <span > 密&nbsp;&nbsp;&nbsp;码&nbsp;
               </span>
             </span>
-            <input id ="add_admin_password" name="add_admin_password" class="form-control" placeholder="" type="password" autocomplete="off"/>
+            <input id ="add_admin_password" name="add_admin_password" class="form-control" placeholder="" type="password" value="" autocomplete="off"/>
           </div>          
       </div>
       <div class="modal-footer">
@@ -278,6 +239,9 @@
 </div>
 
 <script type="text/javascript">
+      $("#add_admin_name").text("");
+      $("#add_nickname").text("");
+      $("#add_admin_password").text("");
     /*检查信息是否合法*/
     function check_password() {
         var old_password = $("#old_password").val();
@@ -296,12 +260,12 @@
           return;
         }
         
-        var url = "<?php echo U('admin/admin/checkPassword');?>"
+        var url = "<?php echo U('admin/admin/checkPassword','','');?>"
         jQuery.post(url, {
             old_password : old_password,
           }, function(msg) {
             if (msg.info == 'ok') {
-              var modify_url = "<?php echo U('admin/admin/modifyPassword');?>"
+              var modify_url = "<?php echo U('admin/admin/modifyPassword','','');?>"
               jQuery.post(modify_url, {
                     new_password : new_password,
                     }, function(msg) {
@@ -330,7 +294,7 @@
           alert("没有填写昵称！");
           $("#nickname").focus();
         } else{
-          var modify_url = "<?php echo U('admin/admin/modifyNickname');?>"
+          var modify_url = "<?php echo U('admin/admin/modifyNickname','','');?>"
           jQuery.post(modify_url, {
                 nickname : nickname,
                 }, function(msg) {
@@ -368,7 +332,7 @@
         alert("密码必须大于6位或小于16位");
         return false;
       } else {
-        var url = "<?php echo U('admin/admin/addAdmin');?>";
+        var url = "<?php echo U('admin/admin/addAdmin','','');?>";
          jQuery.post(url,{
           admin_name : admin_name.val(),
           nickname:nickname.val(),
@@ -385,38 +349,40 @@
         });
       }
     }
-
-    window.load = function(){ 
-      $("#add_admin_name").text("");
-      $("#add_nickname").text("");
-      $("#add_admin_password").text("");
-    }; 
-
 </script>
 
 
 
 <!-- 头部结束-->
+<style type="text/css">
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+.form-signin {
+    max-width: 330px;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+</style>
 <div class="my_table">
-	<h2><?php if($exam_info): ?>编辑<?php else: ?>添加<?php endif; ?>考试<a class="btn btn-info navbar-right" href="<?php echo U('Admin/exams/index');?>">返回考试列表</a></h2><hr>
+	<h2><?php if($exam_info): ?>编辑<?php else: ?>添加<?php endif; ?>考试<a class="btn btn-info" style="float: right;"href="<?php echo U('Admin/exams/index','','');?>">返回考试列表</a></h2><hr>
     <!-- 标题 end -->
     <!-- 内容区块 start -->
-    <div class="row">
-    	<form method="post" action="<?php echo U("admin/exams/save");?>" onSubmit="return check_form()">
-    	<input name="exam_id" value="<?php echo ($exam_info); ?>" type="hidden"></input>
-
-        <div class="input-group  input-group-sm col-md-4 col-md-offset-4">
+    <div>
+        <form method="post" action="<?php echo U("admin/exams/save",'','');?>" onSubmit="return check_form()" class="form-signin">
+            <input name="exam_id" value="<?php echo ($exam_info[exam_id]); ?>" type="hidden"></input>
             <div class="input-group " id="id">
             <span class="input-group-addon" id="sizing-addon1">
-            	<span class="glyphicon glyphicon-align-center " aria-hidden="true">	
-            	</span>
+                <span class="glyphicon glyphicon-align-center " aria-hidden="true"> 
+                </span>
             </span>
             <input id ="title" name="title" class="form-control" placeholder="填写考试标题" type="text" value="<?php echo ($exam_info[title]); ?>" />
-            </div>
         </div><br/>
 
 
-        <div class="input-group  input-group-sm col-md-4 col-md-offset-4">
             <div class="input-group date" id="start_time">
             <span class="input-group-addon" id="sizing-addon1">
                     <span class="glyphicon glyphicon-calendar " aria-hidden="true">
@@ -424,10 +390,8 @@
                 </span>
                 <input id="in_start_time" name="start_time" value="<?php echo ($exam_info[start_time]); ?>" 
                 class="form-control" placeholder="←点击日历图标选择考试开始时间" type="text"/>
-            </div>
         </div><br/>
 
-        <div class="input-group input-group-sm col-md-4 col-md-offset-4">
             <div class="input-group date" id="end_time">
             <span class="input-group-addon" id="sizing-addon1">
                     <span class="glyphicon glyphicon-calendar " aria-hidden="true">
@@ -436,14 +400,12 @@
              <input id="in_end_time" name="end_time" value="<?php echo ($exam_info[end_time]); ?>" 
              class="form-control" placeholder="←点击日历图标选择考试结束时间" type="text"/>
                 
-            </div>
         </div><br/>
         
-        <div class="input-group input-group-sm col-md-4 col-md-offset-4">
-            <img src="images/loading.gif" style="display: none;"/>
-            <input class="btn btn-primary Sub" type="submit" value="保存"/>
+        <div>
+            <input class="btn btn-primary Sub form-control " type="submit" value="保存" />
         </div>
-    </form>
+        </form>
     </div>
 <!-- 主内容 end -->
 
@@ -451,15 +413,15 @@
 	
     function check_form(){
 
-    	if($("#title").value == ""){
+    	if($("#title").val() == ""){
     		alert("请填写标题");
     		$("#title").focus();
     		return false;
-    	} if ($("#in_start_time").value == "") {
+    	} if ($("#in_start_time").val() == "") {
     		alert("请填写考试开始时间");
     		$("#in_start_time").focus();
     		return false;
-    	} if ($("#in_end_time").value == "") {
+    	} if ($("#in_end_time").val() == "") {
     		alert("请填写考试结束时间");
     		$("#in_end_time").focus();
     		return false;
