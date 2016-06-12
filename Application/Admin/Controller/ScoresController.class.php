@@ -116,10 +116,10 @@ class ScoresController extends AuthController {
 	public function export(){
 		$exam_id = I ( "exam_id", "" );
 		$key = I("key",-1);
-		$title = M("Exams")->where(array("exam_id"=>$exam_id))->getField("title");
-		$this->assign("title",$title);
+		//$title = M("Exams")->where(array("exam_id"=>$exam_id))->getField("title");
+		//$this->assign("title",$title);
 		$scores = D ( "Scores" );
-		$filter = array ();
+		/*$filter = array ();
 		if ($exam_id && isset ( $exam_id )) {
 			$this->assign ( 'exam_id', $exam_id );
 			$filter = array (
@@ -144,6 +144,16 @@ class ScoresController extends AuthController {
 		$scores_list = array ();
 		if ($total > 0) {
 			$scores_list = $scores->where ( $filter )->order("score desc,use_time")->relation ( true )->limit ( $Page->firstRow . ',' . $Page->listRows )->select ();
+		}*/
+		$number = I("number","");
+		$count = $scores->where($exam_id)->count();
+		if($number>$count){
+			$number = $count;
+		}
+		if($number == ""){
+			$scores_list = $scores->select ();
+		} else{
+			$scores_list = $scores->order("score desc,use_time")->relation ( true )->limit(0,$number)->select ();
 		}
 		foreach ($scores_list as $key => $score){
 			if($score['family_difficulties']==1){
